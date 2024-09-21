@@ -100,7 +100,7 @@ function Landing() {
         <p className="cursor-pointer">get in touch</p>
       </div>
       {/* h-[calc(100vh-9rem)] to make it more centered. The logic could be improved in the future updates. */}
-      <main className="flex h-[calc(100vh-9rem)] flex-col justify-center p-4 sm:px-8 xl:px-[10rem]">
+      <main className="flex h-[calc(100vh-10rem)] flex-col justify-center p-4 sm:px-8 xl:px-[10rem]">
       {/* <br> to keep consistency on the visual of text. */}
         <h1 className="font-playfair text-4xl font-extrabold leading-tight tracking-tight sm:text-[3rem] 3xl:text-[6rem]">
           Hi, I&#39;m Gorkem,<br></br> Web Developer,<br></br> Web Designer
