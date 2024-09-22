@@ -4,7 +4,23 @@
 
 
 
-body{
+body {
     background-color: #ECECEC;
     color: #3C4510;
+}
+
+.scroll-arrow{
+    height: 10rem;
+    width: 0.125rem;
+    background-color: #3C4510;
+    animation: scroll-arrow-animation infinite 3s;
+}
+
+@keyframes scroll-arrow-animation {
+    0%, 10%{
+        transform: translate3d(0px, -100%, 0px);
+    }
+    90%, 100% {
+        transform: translate3d(0px, 100%, 0px);
+    }
 }

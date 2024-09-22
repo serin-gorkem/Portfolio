@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
@@ -16,8 +17,21 @@ export default {
       },
       screens:{
         "3xl":"1920px"
+      },
+      keyframes: {
+        "scroll": {
+          "0%": { transform: "translate3d(0px,-100%,0px)" },
+          "10%": { transform: "translate3d(0px,-100%,0px)" },
+          "90%": { transform: "translate3d(0px,100%,0px)" },
+          "100%": { transform: "translate3d(0px,100%,0px)" },
+        }
+      },
+      animation: {
+        'scroll-arrow': 'scroll 3.5s infinite',
       }
+      
     },
   },
-  plugins: [],
+  plugins: [
+  ],
 };

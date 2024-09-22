@@ -1,9 +1,18 @@
 function Landing() {
-          
   /* To open and close menu with toggle hidden attribute. */
   function openMenu() {
     document.querySelector(".menu").classList.toggle("hidden");
     document.querySelector(".menu-toggle").classList.toggle("hidden");
+  }
+
+  /* This function is used to highlight the hovered element with a gradient background. */
+  function highlight(element) {
+    return (
+      <div className="group relative z-10 mr-2 w-fit">
+        <div className="absolute bottom-0 -z-10 h-[36%] w-full bg-highlight transition-all duration-500 sm:group-hover:h-[100%]"></div>
+        {element}
+      </div>
+    );
   }
 
   return (
@@ -14,12 +23,16 @@ function Landing() {
           Gorkem.
         </h1>
         <ul className="flex items-center gap-8">
-          <li className="hidden cursor-pointer bg-gradient-to-t from-highlight to-transparent sm:block sm:text-xl 3xl:text-2xl">
-            my work
-          </li>
-          <li className="hidden cursor-pointer sm:block sm:text-xl 3xl:text-2xl">
-            get in touch
-          </li>
+          {highlight(
+            <p className="hidden cursor-pointer sm:block sm:text-xl 3xl:text-2xl">
+              my work
+            </p>,
+          )}
+          {highlight(
+            <p className="hidden cursor-pointer sm:block sm:text-xl 3xl:text-2xl">
+              get in touch
+            </p>,
+          )}
         </ul>
         {/* source:"https://www.svgrepo.com/svg/511004/hamburger-md"*/}
         <svg
@@ -95,30 +108,57 @@ function Landing() {
         </svg>
       </nav>
       {/* Right now I use hidden and block with onClick logic to apply functionality. In future updates this will change to apply animation properly. */}
-      <div className="menu absolute flex hidden h-[6.25rem] w-full flex-col justify-center gap-3 bg-secondary bg-opacity-15 p-4 font-playfair font-bold tracking-tight sm:hidden">
-        <p className="cursor-pointer">my work</p>
-        <p className="cursor-pointer">get in touch</p>
+      <div className="menu absolute z-20 flex hidden h-[6.25rem] w-full flex-col justify-center gap-3 bg-[#A4B9A0] p-4 font-playfair font-bold tracking-tight sm:hidden">
+        <p className="cursor-pointer hover:text-primary">my work</p>
+        <p className="cursor-pointer hover:text-primary">get in touch</p>
       </div>
       {/* h-[calc(100vh-9rem)] to make it more centered. The logic could be improved in the future updates. */}
-      <main className="flex h-[calc(100vh-10rem)] flex-col justify-center p-4 sm:px-8 xl:px-[10rem]">
-      {/* <br> to keep consistency on the visual of text. */}
-        <h1 className="font-playfair text-4xl font-extrabold leading-tight tracking-tight sm:text-[3rem] 3xl:text-[6rem]">
-          Hi, I&#39;m Gorkem,<br></br> Web Developer,<br></br> Web Designer
-          <br></br> and Webflow Developer
+      <main className="-z-10 flex h-[calc(100vh-10rem)] flex-col justify-center p-4 sm:h-[calc(100vh-12rem)] sm:px-8 xl:px-[10rem]">
+        {/* <br> to keep consistency on the visual of text. */}
+        <h1 className="font-playfair text-2xl font-extrabold leading-tight tracking-tight sm:text-[3rem] 3xl:text-[6rem]">
+          Hi, I&#39;m Gorkem,
         </h1>
+        {highlight(
+          <p className="font-playfair text-2xl font-extrabold leading-tight tracking-tight sm:text-[3rem] 3xl:text-[6rem]">
+            Web Developer,
+          </p>,
+        )}
+        {highlight(
+          <p className="font-playfair text-2xl font-extrabold leading-tight tracking-tight sm:text-[3rem] 3xl:text-[6rem]">
+            Web Designer,
+          </p>,
+        )}
+        <div className="flex gap-1 sm:gap-2">
+          <h1 className="font-playfair text-2xl font-extrabold leading-tight tracking-tight sm:text-[3rem] 3xl:text-[6rem]">
+            and
+          </h1>
+          {highlight(
+            <p className="font-playfair text-2xl font-extrabold leading-tight tracking-tight sm:text-[3rem] 3xl:text-[6rem]">
+              Webflow Developer,
+            </p>,
+          )}
+        </div>
         <h2 className="py-8 font-lato text-[0.875rem] font-light leading-[150%] tracking-[2%] text-secondary opacity-70 sm:w-[40rem] sm:text-xl sm:leading-[150%] 3xl:w-[56.25rem] 3xl:text-2xl">
           I design and build beautiful websites for businesses around the globe.
           If you need a modern and powerful website, send me an email. If we are
           a good fit, I will give you a time and cost estimate.
         </h2>
-        <div className="h-[3.75rem] w-[10.625rem] border-2 border-secondary">
-        {/* There will be animatons for the button with translate properties. This is the top layer and will be get down with the base layer. */ }
-          <button className="h-[3.75rem] w-[10.625rem] -translate-x-2 -translate-y-2 bg-secondary font-lato text-white">
+        <div className="relative h-[2.75rem] w-[8.625rem] border-2 border-secondary sm:h-[3.75rem] sm:w-[10.625rem]">
+          {/* CTA Button with the animation logic of moving it on the x and y with transition */}
+          <button className="h-[2.75rem] w-[8.625rem] -translate-x-2 -translate-y-2 bg-secondary font-lato text-xs text-white transition-all duration-500 hover:translate-x-0 hover:translate-y-0 sm:h-[3.75rem] sm:w-[10.625rem] sm:text-base">
             see my work
           </button>
-      {/* The SCROLL text with the animation will be placed here. */}
         </div>
       </main>
+      {/* The SCROLL text with the animation */}
+      <div className="pointer-events-none relative bottom-32 flex justify-end px-4 pt-6 sm:px-8 sm:py-12 xl:px-[10rem]">
+        <div className="-bottom-10 flex w-16 items-start justify-start gap-10 overflow-hidden">
+          <div className="animate-scroll-arrow hidden h-40 w-0.5 bg-secondary sm:block"></div>
+          <p className="absolute top-[4.3rem] rotate-90 font-lato font-medium">
+            SCROLL
+          </p>
+        </div>
+      </div>
     </section>
   );
 }
