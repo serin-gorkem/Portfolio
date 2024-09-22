@@ -151,9 +151,9 @@ function Landing() {
         </div>
       </main>
       {/* The SCROLL text with the animation */}
-      <div className="pointer-events-none relative bottom-32 flex justify-end px-4 pt-6 sm:px-8 sm:py-12 xl:px-[10rem]">
+      <div className="pointer-events-none hidden relative bottom-32 sm:flex justify-end px-4 pt-6 sm:px-8 sm:py-12 xl:px-[10rem]">
         <div className="-bottom-10 flex w-16 items-start justify-start gap-10 overflow-hidden">
-          <div className="animate-scroll-arrow hidden h-40 w-0.5 bg-secondary sm:block"></div>
+          <div className="animate-scroll-arrow  h-40 w-0.5 bg-secondary sm:block"></div>
           <p className="absolute top-[4.3rem] rotate-90 font-lato font-medium">
             SCROLL
           </p>
