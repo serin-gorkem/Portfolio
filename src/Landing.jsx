@@ -1,9 +1,23 @@
 function Landing() {
   /* To open and close menu with toggle hidden attribute. */
   function openMenu() {
-    document.querySelector(".menu").classList.toggle("hidden");
+    const menu = document.querySelector(".menu");
+    menu.classList.toggle("-translate-y-20");
+    menu.classList.toggle("opacity-0");
+    menu.classList.toggle("pointer-events-none");
     document.querySelector(".menu-toggle").classList.toggle("hidden");
   }
+  /*         
+        Text:
+        "playfair":['Playfair Display', 'serif'],
+        "lato":['Lato', 'sans-serif'],
+        "logo":['Azeret Mono', 'Lato', 'sans-serif'],
+        Colors:
+        "primary":"#CCE5D7",
+        "secondary":"#3C4510",
+        "highlight":"#E3FFEF" 
+  */
+
 
   /* This function is used to highlight the hovered element with a gradient background. */
   function highlight(element) {
@@ -108,13 +122,12 @@ function Landing() {
         </svg>
       </nav>
       {/* Right now I use hidden and block with onClick logic to apply functionality. In future updates this will change to apply animation properly. */}
-      <div className="menu absolute z-20 flex hidden h-[6.25rem] w-full flex-col justify-center gap-3 bg-[#A4B9A0] p-4 font-playfair font-bold tracking-tight sm:hidden">
+      <div className="menu absolute z-20 flex -translate-y-20 opacity-0 transition-all duration-500 pointer-events-none  h-[6.25rem] w-full flex-col justify-center gap-3 bg-[#A4B9A0] p-4 font-playfair font-bold tracking-tight sm:hidden">
         <p className="cursor-pointer hover:text-primary">my work</p>
         <p className="cursor-pointer hover:text-primary">get in touch</p>
       </div>
-      {/* h-[calc(100vh-9rem)] to make it more centered. The logic could be improved in the future updates. */}
+      {/* h-[calc(100vh-10rem)] to make it more centered. The logic could be improved in the future updates. */}
       <main className="-z-10 flex h-[calc(100vh-10rem)] flex-col justify-center p-4 sm:h-[calc(100vh-12rem)] sm:px-8 xl:px-[10rem]">
-        {/* <br> to keep consistency on the visual of text. */}
         <h1 className="font-playfair text-2xl font-extrabold leading-tight tracking-tight sm:text-[3rem] 3xl:text-[6rem]">
           Hi, I&#39;m Gorkem,
         </h1>
