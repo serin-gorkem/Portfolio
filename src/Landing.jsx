@@ -36,7 +36,7 @@ function Landing() {
         <h1 className="cursor-pointer font-logo text-xl font-semibold tracking-tight sm:text-2xl 3xl:text-4xl">
           Gorkem.
         </h1>
-        <ul className="flex items-center gap-8">
+        <div className="flex items-center gap-8">
           {highlight(
             <p className="hidden cursor-pointer sm:block sm:text-xl 3xl:text-2xl">
               my work
@@ -47,7 +47,7 @@ function Landing() {
               get in touch
             </p>,
           )}
-        </ul>
+        </div>
         {/* source:"https://www.svgrepo.com/svg/511004/hamburger-md"*/}
         <svg
           className="h-14 w-14 cursor-pointer sm:hidden"
@@ -151,7 +151,7 @@ function Landing() {
             </p>,
           )}
         </div>
-        <h2 className="py-8 font-lato text-[0.875rem] font-light leading-[150%] tracking-[2%] text-secondary opacity-70 sm:w-[40rem] sm:text-xl sm:leading-[150%] 3xl:w-[56.25rem] 3xl:text-2xl">
+        <h2 className="py-8 font-lato text-[0.875rem] font-light leading-[150%] tracking-[2%] text-black opacity-70 sm:w-[40rem] sm:text-xl sm:leading-[150%] 3xl:w-[56.25rem] 3xl:text-2xl">
           I design and build beautiful websites for businesses around the globe.
           If you need a modern and powerful website, send me an email. If we are
           a good fit, I will give you a time and cost estimate.
