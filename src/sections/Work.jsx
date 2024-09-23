@@ -1,10 +1,10 @@
 function Work() {
   return (
-    <article id="work" className="max-container mx-2 sm:mx-8 my-64">
+    <article id="work" className="max-container mx-2 my-64 sm:mx-8">
       {/* Outer div */}
       <section className="flex flex-col items-center justify-between xl:flex-row">
         {/* Left - Top div */}
-        <section className="flex sm:w-11/12 flex-col justify-between gap-6 text-secondary sm:gap-9">
+        <section className="flex flex-col justify-between gap-6 text-secondary sm:w-11/12 sm:gap-9">
           <div>
             {/* Project type */}
             <h1 className="font-lato text-sm leading-[150%] tracking-wide text-black opacity-60 sm:text-xl">
@@ -43,15 +43,21 @@ function Work() {
         {/* Right - Bottom div */}
         <section className="relative my-6 flex aspect-square h-full w-full items-center justify-center bg-primary p-4 sm:my-9 xl:w-1/2">
           <img
-            src="./Hotel.png"
+            src="./Hotel.webp"
             loading="lazy"
             decoding="async"
+            width={"100%"}
+            height={"100%"}
             className="w-full"
             alt="hotel design landing page"
           ></img>
           <img
-            src="./dots.png"
+            src="./dots.webp"
             alt="decoration dots 10 by 10"
+            width={"100%"}
+            height={"100%"}
+            loading="lazy"
+            decoding="async"
             className="absolute -bottom-6 left-0 -z-10 aspect-square w-32 sm:-left-6"
           ></img>
         </section>
