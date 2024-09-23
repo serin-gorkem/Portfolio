@@ -24,14 +24,14 @@ function Landing() {
             </div>
             {/* Project Specs */}
             <ul className="flex flex-wrap gap-2 font-lato font-medium text-black">
-              <li className="flex w-28 justify-center bg-primary py-1 sm:w-36">
-                <p className="text-xs">Figma</p>
+              <li className="flex w-28 justify-center text-xs bg-primary py-1 sm:w-36">
+                Figma
               </li>
-              <li className="flex w-28 justify-center bg-primary py-1 sm:w-36">
-                <p className="text-xs">Website Design</p>
+              <li className="flex w-28 justify-center text-xs bg-primary py-1 sm:w-36">
+                Website Design
               </li>
-              <li className="flex w-28 justify-center bg-primary py-1 sm:w-36">
-                <p className="text-xs">Concept</p>
+              <li className="flex w-28 justify-center text-xs bg-primary py-1 sm:w-36">
+                Concept
               </li>
             </ul>
             {/* Project summary */}
