@@ -16,7 +16,7 @@ function Home() {
   return (
     <article
       id="home"
-      className="max-container relative m-2 h-[calc(100vh-2rem)] bg-primary sm:m-8"
+      className="max-container relative m-2 sm:h-[calc(100vh-4rem)] h-[calc(100vh-1rem)] bg-primary sm:m-8"
     >
       {/* h-[calc(100vh-2rem)] 2rem = 32px witch is the length of margin top + bottom. Whole calculation to keep box centered. */}
       <Navbar />
