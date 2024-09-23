@@ -40,7 +40,7 @@ function Landing() {
             <div className="relative h-[2.75rem] w-[8.625rem] border-2 border-secondary sm:h-[3.75rem] sm:w-[10.625rem]">
               {/* CTA Button with the animation logic of moving it on the x and y with transition */}
               <button className="h-[2.75rem] w-[8.625rem] -translate-x-2 -translate-y-2 bg-secondary font-lato text-xs text-white transition-all duration-500 hover:translate-x-0 hover:translate-y-0 sm:h-[3.75rem] sm:w-[10.625rem] sm:text-base">
-                see my work
+                see this work
               </button>
             </div>
           </section>
