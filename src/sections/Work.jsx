@@ -44,8 +44,8 @@ function Work() {
         <section className="relative my-6 flex aspect-square h-full w-full items-center justify-center bg-primary p-4 sm:my-9 xl:w-1/2">
           <img
             src="./Hotel.webp"
-            loading="lazy"
             decoding="async"
+            rel="preload"
             width={"100%"}
             height={"100%"}
             className="w-full"
@@ -53,12 +53,12 @@ function Work() {
           ></img>
           <img
             src="./dots.webp"
-            alt="decoration dots 10 by 10"
+            decoding="async"
+            rel="preload"
             width={"100%"}
             height={"100%"}
-            loading="lazy"
-            decoding="async"
             className="absolute -bottom-6 left-0 -z-10 aspect-square w-32 sm:-left-6"
+            alt="decoration dots 10 by 10"
           ></img>
         </section>
       </section>

@@ -22,13 +22,14 @@ function Navbar() {
           {
             <Highlight
               element={
-                <Link smooth to="#work">
-                  <a
-                    aria-label="Scroll to the work section."
-                    className="hidden cursor-pointer sm:block sm:text-xl 3xl:text-2xl"
-                  >
+                <Link
+                  smooth
+                  to="#work"
+                  aria-label="Scroll to the work section."
+                >
+                  <div className="hidden cursor-pointer sm:block sm:text-xl 3xl:text-2xl">
                     my work
-                  </a>
+                  </div>
                 </Link>
               }
             />
@@ -36,13 +37,14 @@ function Navbar() {
           {
             <Highlight
               element={
-                <Link smooth to="#footer">
-                  <a
-                    aria-label="Scroll to the work section at the end of the page."
-                    className="hidden cursor-pointer sm:block sm:text-xl 3xl:text-2xl"
-                  >
+                <Link
+                  smooth
+                  to="#footer"
+                  aria-label="Scroll to the work section at the end of the page."
+                >
+                  <div className="hidden cursor-pointer sm:block sm:text-xl 3xl:text-2xl">
                     get in touch
-                  </a>
+                  </div>
                 </Link>
               }
             />
@@ -122,21 +124,15 @@ function Navbar() {
         </svg>
       </nav>
       <div className="menu pointer-events-none absolute z-20 flex h-[6.25rem] w-full -translate-y-20 flex-col justify-center gap-3 bg-[#A4B9A0] p-4 font-playfair font-bold tracking-tight opacity-0 transition-all duration-500 sm:hidden">
-        <Link smooth to="#work">
-          <a
-            aria-label="Scroll to the work section."
-            className="cursor-pointer hover:text-primary"
-          >
-            my work
-          </a>
+        <Link smooth to="#work" aria-label="Scroll to the work section.">
+          <div className="cursor-pointer hover:text-primary">my work</div>
         </Link>
-        <Link smooth to="#footer">
-          <a
-            aria-label="Scroll to the work section at the end of the page."
-            className="cursor-pointer hover:text-primary"
-          >
-            get in touch
-          </a>
+        <Link
+          smooth
+          to="#footer"
+          aria-label="Scroll to the work section at the end of the page."
+        >
+          <div className="cursor-pointer hover:text-primary">get in touch</div>
         </Link>
       </div>
     </>
