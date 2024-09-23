@@ -14,9 +14,9 @@ function Navbar() {
     <>
       <nav className="flex items-center justify-between px-4 pt-6 sm:px-8 sm:py-12 xl:px-[10rem]">
         <Link smooth to="#home">
-          <a className="cursor-pointer font-logo text-xl font-semibold tracking-tight sm:text-2xl 3xl:text-4xl">
+          <div className="cursor-pointer font-logo text-xl font-semibold tracking-tight sm:text-2xl 3xl:text-4xl">
             Gorkem.
-          </a>
+          </div>
         </Link>
         <div className="flex items-center gap-8">
           {
