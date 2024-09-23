@@ -1,3 +1,5 @@
+import { HashLink as Link } from "react-router-hash-link";
+
 function Home() {
   /* To open and close menu with toggle hidden attribute. */
   function openMenu() {
@@ -27,24 +29,33 @@ function Home() {
     );
   }
   return (
-    <article className="max-container relative m-2 h-[calc(100vh-2rem)] bg-primary sm:m-8">
+    <article
+      id="home"
+      className="max-container relative m-2 h-[calc(100vh-2rem)] bg-primary sm:m-8"
+    >
       {/* h-[calc(100vh-2rem)] 2rem = 32px witch is the length of margin top + bottom. Whole calculation to keep box centered. */}
       <nav className="flex items-center justify-between px-4 pt-6 sm:px-8 sm:py-12 xl:px-[10rem]">
-        <h1 className="cursor-pointer font-logo text-xl font-semibold tracking-tight sm:text-2xl 3xl:text-4xl">
-          Gorkem.
-        </h1>
-        <div className="flex items-center gap-8">
+        <Link smooth to="#home">
+          <h1 className="cursor-pointer font-logo text-xl font-semibold tracking-tight sm:text-2xl 3xl:text-4xl">
+            Gorkem.
+          </h1>
+        </Link>
+        <ul className="flex items-center gap-8">
           {highlight(
-            <p className="hidden cursor-pointer sm:block sm:text-xl 3xl:text-2xl">
-              my work
-            </p>,
+            <Link smooth to="#work">
+              <li className="hidden cursor-pointer sm:block sm:text-xl 3xl:text-2xl">
+                my work
+              </li>
+            </Link>,
           )}
           {highlight(
-            <p className="hidden cursor-pointer sm:block sm:text-xl 3xl:text-2xl">
-              get in touch
-            </p>,
+            <Link to="#footer">
+              <li className="hidden cursor-pointer sm:block sm:text-xl 3xl:text-2xl">
+                get in touch
+              </li>
+            </Link>,
           )}
-        </div>
+        </ul>
         {/* source:"https://www.svgrepo.com/svg/511004/hamburger-md"*/}
         <svg
           className="h-14 w-14 cursor-pointer sm:hidden"
@@ -125,26 +136,26 @@ function Home() {
       </ul>
       {/* h-[calc(100vh-10rem)] to make it more centered. The logic could be improved in the future updates. */}
       <main className="-z-10 flex h-[calc(100vh-10rem)] flex-col justify-center p-4 sm:h-[calc(100vh-12rem)] sm:px-8 xl:px-[10rem]">
-        <h1 className="font-playfair text-2xl font-extrabold leading-tight tracking-tighter sm:text-[3rem] 3xl:text-[6rem]">
+        <h1 className="font-playfair text-3xl font-extrabold leading-tight tracking-tighter sm:text-[3rem] 3xl:text-[5rem]">
           Hi, I&#39;m Gorkem,
         </h1>
         {highlight(
-          <p className="font-playfair text-2xl font-extrabold leading-tight tracking-tighter sm:text-[3rem] 3xl:text-[6rem]">
+          <p className="font-playfair text-3xl font-extrabold leading-tight tracking-tighter sm:text-[3rem] 3xl:text-[5rem]">
             Web Developer,
           </p>,
         )}
         {highlight(
-          <p className="font-playfair text-2xl font-extrabold leading-tight tracking-tighter sm:text-[3rem] 3xl:text-[6rem]">
+          <p className="font-playfair text-3xl font-extrabold leading-tight tracking-tighter sm:text-[3rem] 3xl:text-[5rem]">
             Web Designer,
           </p>,
         )}
         {/* This two is wrapped with a div because I wanted them to be one line. */}
         <div className="flex gap-1 sm:gap-2">
-          <h1 className="font-playfair text-2xl font-extrabold leading-tight tracking-tighter sm:text-[3rem] 3xl:text-[6rem]">
+          <h1 className="font-playfair text-3xl font-extrabold leading-tight tracking-tighter sm:text-[3rem] 3xl:text-[5rem]">
             and
           </h1>
           {highlight(
-            <p className="font-playfair text-2xl font-extrabold leading-tight tracking-tighter sm:text-[3rem] 3xl:text-[6rem]">
+            <p className="font-playfair text-3xl font-extrabold leading-tight tracking-tighter sm:text-[3rem] 3xl:text-[5rem]">
               Webflow Developer,
             </p>,
           )}
@@ -170,7 +181,7 @@ function Home() {
           "100%": { transform: "translate3d(0px,100%,0px)" },
         }
         animation: {
-        'scroll-arrow': 'scroll 3.5s infinite',
+        'scroll-arrow': 'scroll 2s infinite',
       }
       The second div has overflow: hidden to make it look like it disappears.
        */}

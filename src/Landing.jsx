@@ -4,25 +4,28 @@ function Landing() {
   return (
     <>
       <Home />
-      <article className="max-container mx-2 my-64 sm:mx-8">
+      <article
+        id="work"
+        className=" max-container mx-8 my-64"
+      >
         {/* Outer div */}
         <section className="flex flex-col items-center justify-between xl:flex-row">
           {/* Left - Top div */}
-          <section className="flex w-full flex-col justify-between gap-6 text-secondary sm:gap-9">
+          <section className="flex w-11/12 flex-col justify-between gap-6 text-secondary sm:gap-9">
             <div>
-            {/* Project type */}
-              <h1 className="font-lato text-sm leading-[150%] tracking-wide opacity-60 sm:text-xl">
+              {/* Project type */}
+              <h1 className="font-lato text-sm leading-[150%] tracking-wide text-black opacity-60 sm:text-xl">
                 Web Design Work
               </h1>
-            {/* Project title  */}
-              <p className="font-playfair text-2xl font-extrabold leading-tight tracking-tighter sm:text-6xl">
+              {/* Project title  */}
+              <p className="font-playfair text-2xl font-extrabold leading-tight tracking-tighter sm:w-[26rem] sm:text-6xl">
                 Elysium Hotel Website Design
               </p>
             </div>
             {/* Project Specs */}
             <ul className="flex flex-wrap gap-2 font-lato font-medium text-black">
               <li className="flex w-28 justify-center bg-primary py-1 sm:w-36">
-                <p  className="text-xs">Figma</p>
+                <p className="text-xs">Figma</p>
               </li>
               <li className="flex w-28 justify-center bg-primary py-1 sm:w-36">
                 <p className="text-xs">Website Design</p>
@@ -51,9 +54,11 @@ function Landing() {
               loading="lazy"
               decoding="async"
               className="w-full"
+              alt="hotel design landing page"
             ></img>
             <img
               src="./dots.png"
+              alt="decoration dots 10 by 10"
               className="absolute -bottom-6 left-0 -z-10 aspect-square w-32 sm:-left-6"
             ></img>
           </section>
