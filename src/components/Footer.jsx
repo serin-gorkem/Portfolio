@@ -5,7 +5,7 @@ function Footer() {
   return (
     <footer
       id="footer"
-      className="max-container relative mx-2 my-8 flex h-[23.375rem] flex-col justify-center bg-primary px-4 sm:mx-8 sm:h-[30.25rem] sm:px-8 xl:my-16 xl:h-[36.25rem] xl:px-[10rem]"
+      className="max-container mt-24 relative mx-2 my-8 flex h-[23.375rem] flex-col justify-center bg-primary px-4 sm:mx-8 sm:h-[30.25rem] sm:px-8 xl:h-[36.25rem] xl:px-[10rem]"
     >
       <div className="mb-4 flex gap-1 sm:h-12 sm:gap-1 xl:mb-8">
         <h1 className="font-playfair text-3xl font-extrabold tracking-tighter sm:pb-10 sm:text-5xl xl:pb-8">

@@ -28,17 +28,17 @@ const Landing = memo(function Landing() {
       <Work />
       <div className="flex w-full justify-center">
         <ul className=" sm:my-36 flex w-24 justify-evenly self-center sm:w-32">
-          <li className="aspect-square w-3 rounded-full bg-secondary sm:w-5"></li>
           <li className="aspect-square w-3 rounded-full bg-primary sm:w-5"></li>
+          <li className="aspect-square w-3 rounded-full bg-secondary sm:w-5"></li>
           <li className="aspect-square w-3 rounded-full bg-primary sm:w-5"></li>
         </ul>
       </div>
       <WhatIDo />
       <div className="flex w-full justify-center">
-        <ul className=" sm:my-36 flex w-24 justify-evenly self-center sm:w-32">
+        <ul className="sm:my-36 flex w-24 justify-evenly self-center sm:w-32">
+          <li className="aspect-square w-3 rounded-full bg-primary sm:w-5"></li>
+          <li className="aspect-square w-3 rounded-full bg-primary sm:w-5"></li>
           <li className="aspect-square w-3 rounded-full bg-secondary sm:w-5"></li>
-          <li className="aspect-square w-3 rounded-full bg-primary sm:w-5"></li>
-          <li className="aspect-square w-3 rounded-full bg-primary sm:w-5"></li>
         </ul>
       </div>
       <Footer />
