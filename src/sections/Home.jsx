@@ -1,11 +1,13 @@
 import Navbar from "../components/Navbar";
 import Highlight from "../components/Highlight";
+import { HashLink as Link } from "react-router-hash-link";
+
 
 function Home() {
   return (
     <article
       id="home"
-      className="max-container relative m-2 sm:h-[calc(100vh-4rem)] h-[calc(100vh-1rem)] bg-primary sm:m-8"
+      className="max-container relative m-2 mb-24 sm:h-[calc(100vh-4rem)] h-[calc(100vh-1rem)] bg-primary sm:m-8"
     >
       {/* h-[calc(100vh-2rem)] 2rem = 32px witch is the length of margin top + bottom. Whole calculation to keep box centered. */}
       <Navbar isFooter={false} />
@@ -56,9 +58,11 @@ function Home() {
         </h2>
         <div className="relative h-[2.75rem] w-[8.625rem] border-2 border-secondary sm:h-[3.75rem] sm:w-[10.625rem]">
           {/* CTA Button with the animation logic of moving it on the x and y with transition */}
+          <Link smooth to="#work">
           <button className="h-[2.75rem] w-[8.625rem] -translate-x-2 -translate-y-2 bg-secondary font-lato text-xs text-white transition-all duration-500 hover:translate-x-0 hover:translate-y-0 sm:h-[3.75rem] sm:w-[10.625rem] sm:text-base">
             see my work
           </button>
+          </Link>
         </div>
       </main>
       {/* The SCROLL text with the animation

@@ -1,6 +1,6 @@
 function Work() {
   return (
-    <article id="work" className="max-container flex flex-col relative sm:mx-8">
+    <article id="work" className="max-container py-24 sm:py-2 flex flex-col relative sm:mx-8">
       {/* Outer div */}
       <section className="flex px-2 flex-col items-center justify-between xl:flex-row">
         {/* Left - Top div */}

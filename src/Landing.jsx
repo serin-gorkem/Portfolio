@@ -19,7 +19,7 @@ const Landing = memo(function Landing() {
     <>
       <Home />
       <div className="flex w-full justify-center">
-        <ul className="my-24 sm:my-36 flex w-24 justify-evenly self-center sm:w-32">
+        <ul className=" sm:my-36 flex w-24 justify-evenly self-center sm:w-32">
           <li className="aspect-square w-3 rounded-full bg-secondary sm:w-5"></li>
           <li className="aspect-square w-3 rounded-full bg-primary sm:w-5"></li>
           <li className="aspect-square w-3 rounded-full bg-primary sm:w-5"></li>
@@ -27,7 +27,7 @@ const Landing = memo(function Landing() {
       </div>
       <Work />
       <div className="flex w-full justify-center">
-        <ul className="my-24 sm:my-36 flex w-24 justify-evenly self-center sm:w-32">
+        <ul className=" sm:my-36 flex w-24 justify-evenly self-center sm:w-32">
           <li className="aspect-square w-3 rounded-full bg-secondary sm:w-5"></li>
           <li className="aspect-square w-3 rounded-full bg-primary sm:w-5"></li>
           <li className="aspect-square w-3 rounded-full bg-primary sm:w-5"></li>
@@ -35,7 +35,7 @@ const Landing = memo(function Landing() {
       </div>
       <WhatIDo />
       <div className="flex w-full justify-center">
-        <ul className="my-24 sm:my-36 flex w-24 justify-evenly self-center sm:w-32">
+        <ul className=" sm:my-36 flex w-24 justify-evenly self-center sm:w-32">
           <li className="aspect-square w-3 rounded-full bg-secondary sm:w-5"></li>
           <li className="aspect-square w-3 rounded-full bg-primary sm:w-5"></li>
           <li className="aspect-square w-3 rounded-full bg-primary sm:w-5"></li>

@@ -1,7 +1,7 @@
 import Highlight from "../components/Highlight" ;
 function WhatIDo() {
   return (
-    <article id="whatIDo" className="max-container mx-2 flex items-center py-8 sm:py-16 sm:mx-8">
+    <article id="whatIDo" className="max-container py-24 sm:py-48 mx-2 flex items-center sm:mx-8">
       {/* <div className="flex h-8 w-full mb-32 justify-center">
         <ul className="mb-36 flex w-24 justify-evenly self-center sm:w-32">
           <li className="aspect-square w-3 rounded-full bg-primary sm:w-5"></li>
@@ -9,7 +9,7 @@ function WhatIDo() {
           <li className="aspect-square w-3 rounded-full bg-primary sm:w-5"></li>
         </ul>
       </div> */}
-      <section className="flex flex-col w-full justify-between gap-3 sm:gap-16 xl:flex-row">
+      <section className="flex flex-col w-full justify-between gap-8 sm:gap-16 xl:flex-row">
         <div className="flex gap-1 sm:h-16 sm:gap-2">
           <h1 className="font-playfair text-4xl font-extrabold tracking-tight text-secondary sm:text-6xl">
             What
@@ -29,7 +29,7 @@ function WhatIDo() {
             <h1 className="pb-3 font-playfair text-xl font-light sm:pb-6 sm:text-3xl">
               Design
             </h1>
-            <p className="font-lato leading-relaxed sm:leading-relaxed tracking-[%2] opacity-50 sm:w-[45rem] sm:text-xl">
+            <p className="font-lato leading-relaxed sm:leading-relaxed tracking-[%2] opacity-70 sm:w-[45rem] sm:text-xl">
               I design beautiful and powerful websites for modern businesses.
               Any business today needs a website that wins customers&#39; trust
               and helps you do your business well. I make sure your website is
@@ -40,7 +40,7 @@ function WhatIDo() {
             <h1 className="pb-3 font-playfair text-xl font-light sm:pb-6 sm:text-3xl">
               Development
             </h1>
-            <p className="font-lato leading-relaxed sm:leading-relaxed tracking-[%2] opacity-50 sm:w-[45rem] sm:text-xl">
+            <p className="font-lato leading-relaxed sm:leading-relaxed tracking-[%2] opacity-70 sm:w-[45rem] sm:text-xl">
               I build websites with mostly React and Webflow where I can create
               responsive, powerful and fully custom websites. Plus, Webflow has
               an incredibly simple Content Editor for you and your team to edit
