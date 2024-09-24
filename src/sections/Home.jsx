@@ -2,35 +2,23 @@ import Navbar from "../components/Navbar";
 import Highlight from "../components/Highlight";
 
 function Home() {
-  /*         
-        Text:
-        "playfair":['Playfair Display', 'serif'],
-        "lato":['Lato', 'sans-serif'],
-        "logo":['Azeret Mono', 'Lato', 'sans-serif'],
-        Colors:
-        "primary":"#CCE5D7",
-        "secondary":"#3C4510",
-        "highlight":"#E3FFEF" 
-  */
-
   return (
     <article
       id="home"
       className="max-container relative m-2 sm:h-[calc(100vh-4rem)] h-[calc(100vh-1rem)] bg-primary sm:m-8"
     >
       {/* h-[calc(100vh-2rem)] 2rem = 32px witch is the length of margin top + bottom. Whole calculation to keep box centered. */}
-      <Navbar />
-      {/* Right now I use hidden and block with onClick logic to apply functionality. In future updates this will change to apply animation properly. */}
-
-      {/* h-[calc(100vh-10rem)] to make it more centered. The logic could be improved in the future updates. */}
-      <main className="-z-10 flex h-[calc(100vh-10rem)] flex-col justify-center p-4 sm:h-[calc(100vh-12rem)] sm:px-8 xl:px-[10rem]">
-        <h1 className="font-playfair text-3xl font-extrabold leading-tight tracking-tighter sm:text-[3rem] 3xl:text-[5rem]">
+      <Navbar isFooter={false} />
+      {/* h-[calc(100vh-10rem)] to make it more centered.*/}
+      <main className="-z-10 flex h-[calc(100vh-10rem)] flex-col justify-center p-4 sm:h-[calc(100vh-14rem)] sm:px-8 xl:px-[10rem]">
+        <h1 className="font-playfair text-3xl font-extrabold leading-tight sm:leading-tight 3xl:leading-tight tracking-tighter sm:text-[3rem] 3xl:text-[5rem]">
           Hi, I&#39;m Gorkem,
         </h1>
+        {/* Highlight is a component which adds custom highlights to selected texts. */}
         {
           <Highlight
             element={
-              <p className="font-playfair text-3xl font-extrabold leading-tight tracking-tighter sm:text-[3rem] 3xl:text-[5rem]">
+              <p className="font-playfair text-3xl font-extrabold leading-tight sm:leading-tight 3xl:leading-tight tracking-tighter sm:text-[3rem] 3xl:text-[5rem]">
                 Web Developer,
               </p>
             }
@@ -39,7 +27,7 @@ function Home() {
         {
           <Highlight
             element={
-              <p className="font-playfair text-3xl font-extrabold leading-tight tracking-tighter sm:text-[3rem] 3xl:text-[5rem]">
+              <p className="font-playfair text-3xl font-extrabold leading-tight sm:leading-tight 3xl:leading-tight tracking-tighter sm:text-[3rem] 3xl:text-[5rem]">
                 Web Designer,
               </p>
             }
@@ -48,13 +36,13 @@ function Home() {
 
         {/* This two is wrapped with a div because I wanted them to be one line. */}
         <div className="flex gap-1 sm:gap-2">
-          <h1 className="font-playfair text-3xl font-extrabold leading-tight tracking-tighter sm:text-[3rem] 3xl:text-[5rem]">
+          <h1 className="font-playfair text-3xl font-extrabold leading-tight sm:leading-tight 3xl:leading-tight tracking-tighter sm:text-[3rem] 3xl:text-[5rem]">
             and
           </h1>
           {
             <Highlight
               element={
-                <p className="font-playfair text-3xl font-extrabold leading-tight tracking-tighter sm:text-[3rem] 3xl:text-[5rem]">
+                <p className="font-playfair text-3xl font-extrabold leading-tight sm:leading-tight 3xl:leading-tight tracking-tighter sm:text-[3rem] 3xl:text-[5rem]">
                   Webflow Developer,
                 </p>
               }

@@ -1,22 +1,17 @@
 function Work() {
   return (
-    <article id="work" className="max-container flex flex-col relative mx-2 my-32 sm:mx-8">
-        <ul className="mb-24 flex w-24 justify-evenly self-center sm:w-32">
-          <li className="aspect-square w-3 rounded-full bg-secondary sm:w-5"></li>
-          <li className="aspect-square w-3 rounded-full bg-primary sm:w-5"></li>
-          <li className="aspect-square w-3 rounded-full bg-primary sm:w-5"></li>
-        </ul>
+    <article id="work" className="max-container flex flex-col relative sm:mx-8">
       {/* Outer div */}
-      <section className="flex flex-col items-center justify-between xl:flex-row">
+      <section className="flex px-2 flex-col items-center justify-between xl:flex-row">
         {/* Left - Top div */}
         <section className="flex flex-col justify-between gap-6 text-secondary sm:w-11/12 sm:gap-9">
           <div>
             {/* Project type */}
-            <h1 className="font-lato text-sm leading-[150%] tracking-wide text-black opacity-60 sm:text-xl">
+            <h1 className="font-lato text-sm tracking-widest text-black opacity-60 sm:text-xl">
               Web Design Work
             </h1>
             {/* Project title  */}
-            <p className="font-playfair text-2xl font-extrabold leading-tight tracking-tighter sm:w-[26rem] sm:text-6xl">
+            <p className="font-playfair text-2xl font-extrabold leading-tight sm:leading-tight tracking-tighter sm:w-[26rem] sm:text-6xl">
               Elysium Hotel Website Design
             </p>
           </div>
@@ -33,7 +28,7 @@ function Work() {
             </li>
           </ul>
           {/* Project summary */}
-          <p className="leading-2 font-lato font-light tracking-normal sm:w-[26rem] sm:text-[1.125rem]">
+          <p className="leading-[150%] sm:leading-[150%] font-lato font-light tracking-normal xl:w-[26rem] sm:text-[1.125rem]">
             This is a homepage design and build for a concept project - a chat
             application. I designed the page first then built a responsive web
             page using Webflow.
@@ -46,7 +41,7 @@ function Work() {
           </div>
         </section>
         {/* Right - Bottom div */}
-        <section className="relative my-6 flex aspect-square h-full w-full items-center justify-center bg-primary p-4 sm:my-9 xl:w-1/2">
+        <section className="relative my-6 flex aspect-square h-full w-full items-center justify-center bg-primary p-4 sm:px-8 sm:my-9 xl:w-8/12">
           <img
             src="./Hotel.webp"
             decoding="async"
