@@ -7,11 +7,11 @@ function Work() {
         <section className="flex flex-col justify-between gap-6 text-secondary sm:w-8/12 sm:gap-9">
           <div>
             {/* Project type */}
-            <h1 className="font-lato text-sm tracking-[0.2rem] text-black opacity-60 sm:px-1 sm:text-xs">
+            <h1 className="font-lato text-xs mb-2 tracking-[0.2rem] text-black opacity-60 sm:px-1 sm:text-base">
               WEB DESIGN WORK
             </h1>
             {/* Project title  */}
-            <p className="font-playfair text-[1.6rem] font-extrabold leading-tight tracking-tighter sm:w-[26rem] sm:text-6xl sm:leading-tight">
+            <p className="font-playfair text-[2rem] font-extrabold leading-tight tracking-tighter sm:w-[26rem] sm:text-6xl sm:leading-tight">
               Elysium Hotel Website Design
             </p>
           </div>
@@ -57,7 +57,7 @@ function Work() {
             </p>
           </div>
           <svg
-            className=" absolute -bottom-6 -left-5 -z-10 aspect-square w-32 sm:-left-8"
+            className=" absolute -bottom-6 -left-7 -z-10 aspect-square w-32 sm:-left-8"
             width="115"
             height="115"
             viewBox="0 0 115 115"
