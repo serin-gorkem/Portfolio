@@ -24,12 +24,16 @@ export default {
           "10%": { transform: "translate3d(0px,-100%,0px)" },
           "90%": { transform: "translate3d(0px,100%,0px)" },
           "100%": { transform: "translate3d(0px,100%,0px)" },
-        }
+        },
+        "fade-in": {
+          "0%": { opacity: "0", transform: "translate3d(0px,50%,0px)" },
+          "100%": { opacity: "1",transform: "translate3d(0px,0%,0px)" },
+        },
       },
       animation: {
         'scroll-arrow': 'scroll 2s infinite',
+        'fade-in': 'fade-in 1s ease-in-out',
       }
-      
     },
   },
   plugins: [

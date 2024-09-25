@@ -1,11 +1,12 @@
 import Home from "./sections/Home";
+import PropTypes from "prop-types";
 import { lazy, memo } from "react";
 const Footer = lazy(() => import("./components/Footer"));
 const Work = lazy(() => import("./sections/Work"));
 const WhatIDo = lazy(() => import("./sections/WhatIDo"));
 
 const Landing = memo(function Landing() {
-    /*         
+  /*         
         Text:
         "playfair":['Playfair Display', 'serif'],
         "lato":['Lato', 'sans-serif'],
@@ -15,35 +16,39 @@ const Landing = memo(function Landing() {
         "secondary":"#3C4510",
         "highlight":"#E3FFEF" 
   */
+
   return (
     <>
       <Home />
-      <div className="flex w-full justify-center">
-        <ul className=" sm:my-36 flex w-24 justify-evenly self-center sm:w-32">
-          <li className="aspect-square w-3 rounded-full bg-secondary sm:w-5"></li>
-          <li className="aspect-square w-3 rounded-full bg-primary sm:w-5"></li>
-          <li className="aspect-square w-3 rounded-full bg-primary sm:w-5"></li>
-        </ul>
-      </div>
+      <PageIndicator page={1} />
       <Work />
-      <div className="flex w-full justify-center">
-        <ul className=" sm:my-36 flex w-24 justify-evenly self-center sm:w-32">
-          <li className="aspect-square w-3 rounded-full bg-primary sm:w-5"></li>
-          <li className="aspect-square w-3 rounded-full bg-secondary sm:w-5"></li>
-          <li className="aspect-square w-3 rounded-full bg-primary sm:w-5"></li>
-        </ul>
-      </div>
+      <PageIndicator page={2} />
       <WhatIDo />
-      <div className="flex w-full justify-center">
-        <ul className="sm:my-36 flex w-24 justify-evenly self-center sm:w-32">
-          <li className="aspect-square w-3 rounded-full bg-primary sm:w-5"></li>
-          <li className="aspect-square w-3 rounded-full bg-primary sm:w-5"></li>
-          <li className="aspect-square w-3 rounded-full bg-secondary sm:w-5"></li>
-        </ul>
-      </div>
+      <PageIndicator page={3} />
       <Footer />
     </>
   );
 });
+function PageIndicator({ page }) {
+  const listArray = [1, 2, 3];
+  return (
+    <div className="flex w-full justify-center py-10 sm:py-24">
+      <ul className="flex w-24 justify-evenly gap-2 self-center sm:gap-4 3xl:w-36 3xl:gap-8">
+        {listArray.map((index) => (
+          <li
+            key={index}
+            className={`aspect-square w-3.5 rounded-full bg-primary sm:w-5 3xl:w-8 ${
+              index === page ? "bg-secondary" : "bg-primary"
+            }`}
+          ></li>
+        ))}
+      </ul>
+    </div>
+  );
+}
+
+PageIndicator.propTypes = {
+  page: PropTypes.number.isRequired,
+};
 
 export default Landing;

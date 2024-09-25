@@ -3,10 +3,8 @@ import { lazy } from "react";
 const Navbar = lazy(() => import("../components/Navbar"));
 function Footer() {
   return (
-    <footer
-      id="footer"
-      className="max-container mt-24 relative mx-2 my-8 flex h-[23.375rem] flex-col justify-center bg-primary px-4 sm:mx-8 sm:h-[30.25rem] sm:px-8 xl:h-[36.25rem] xl:px-[10rem]"
-    >
+    <footer id="footer" className="m-2 bg-primary xl:m-4">
+    <section className="max-container relative w-full p-4 py-8 sm:px-8 sm:py-16 xl:px-[6rem]">
       <div className="mb-4 flex gap-1 sm:h-12 sm:gap-1 xl:mb-8">
         <h1 className="font-playfair text-3xl font-extrabold tracking-tighter sm:pb-10 sm:text-5xl xl:pb-8">
           Want to
@@ -21,9 +19,9 @@ function Footer() {
           />
         }
       </div>
-      <p className="pb-8 font-lato font-light tracking-[%2] leading-relaxed sm:leading-relaxed opacity-60 sm:text-2xl xl:w-[61.25rem] xl:pb-16">
-        If you need a modern and powerful website for your business, startup or
-        yourself, I am available for work. You can email me directly at :
+      <p className="pb-8 font-lato font-light leading-relaxed tracking-[%2] opacity-60 sm:text-2xl sm:leading-relaxed xl:w-[61.25rem] xl:pb-16">
+        If you need a modern and powerful website for your business, startup
+        or yourself, I am available for work. You can email me directly at :
       </p>
       <div className="mb-20">
         {
@@ -32,7 +30,7 @@ function Footer() {
               <a
                 href="mailto: gorkemserin@outlook.com"
                 aria-label="Go to the mail application to send me mail."
-                className="font-lato font-light tracking-[%2] leading-relaxed sm:leading-relaxed opacity-70 sm:text-2xl "
+                className="font-lato font-light leading-relaxed tracking-[%2] opacity-70 sm:text-2xl sm:leading-relaxed"
               >
                 gorkemserin@outlook.com
               </a>
@@ -41,10 +39,15 @@ function Footer() {
         }
       </div>
       <Navbar isFooter={true} />
-      <a href="https://www.linkedin.com/in/gorkem-serin-097606227/" aria-label="Link to my Linkedin" className="absolute -bottom-6 text-[0.625rem] opacity-40 sm:text-xs xl:-bottom-12 xl:text-xl">
+      <a
+        href="https://www.linkedin.com/in/gorkem-serin-097606227/"
+        aria-label="Link to my Linkedin"
+        className="absolute -bottom-6 text-[0.625rem] opacity-40 sm:text-xs xl:-bottom-12 xl:text-xl"
+      >
         © All rights reserved - Gorkem Serin
       </a>
-    </footer>
+    </section>
+  </footer>
   );
 }
 export default Footer;

@@ -73,7 +73,7 @@ function Navbar({ isFooter }) {
         </nav>
       ) : (
         <>
-          <nav className="flex items-center justify-between px-4 pt-6 sm:px-8 sm:py-12 xl:px-[10rem]">
+          <nav className="flex items-center max-container justify-between px-4 pt-6 sm:px-8 sm:py-12 xl:px-[6rem]">
             <Link smooth to="#home">
               <div className="cursor-pointer font-logo text-xl font-semibold tracking-tight sm:text-2xl 3xl:text-4xl">
                 Gorkem.
