@@ -42,7 +42,7 @@ function Footer() {
       <a
         href="https://www.linkedin.com/in/gorkem-serin-097606227/"
         aria-label="Link to my Linkedin"
-        className="absolute -bottom-6 text-[0.625rem] opacity-40 sm:text-xs xl:-bottom-12 xl:text-xl"
+        className="absolute -bottom-6 text-[0.625rem] opacity-60 sm:text-xs xl:-bottom-12 xl:text-xl"
       >
         © All rights reserved - Gorkem Serin
       </a>

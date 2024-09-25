@@ -59,10 +59,10 @@ function Home() {
             globe. If you need a modern and powerful website, send me an email.
             If we are a good fit, I will give you a time and cost estimate.
           </h2>
-          <div className="relative animate-fade-in h-[2.75rem] w-[8.625rem] border-2 border-secondary sm:h-[3.75rem] sm:w-[10.625rem]">
+          <div className="relative animate-fade-in h-[3.5rem] w-[9.625rem] border-2 border-secondary sm:h-[3.75rem] sm:w-[10.625rem]">
             {/* CTA Button with the animation logic of moving it on the x and y with transition */}
             <Link smooth to="#work">
-              <button className="h-[2.75rem] w-[8.625rem] -translate-x-2 -translate-y-2 bg-secondary font-lato text-xs text-white transition-all duration-500 hover:translate-x-0 hover:translate-y-0 sm:h-[3.75rem] sm:w-[10.625rem] sm:text-base">
+              <button className="h-[3.5rem] w-[9.625rem] -translate-x-2 -translate-y-2 bg-secondary font-lato text-sm text-white transition-all duration-500 hover:translate-x-0 hover:translate-y-0 sm:h-[3.75rem] sm:w-[10.625rem] sm:text-base">
                 see my work
               </button>
             </Link>
