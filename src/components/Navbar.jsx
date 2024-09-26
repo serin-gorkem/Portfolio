@@ -17,7 +17,7 @@ function Navbar({ isFooter }) {
     {/* Since I want two types of navigation bar, instead of codding it from scratch, I used a logic to show me a footer navbar if the props isFooter true, and home navbar if false. */}
       {isFooter ? (
         <nav className="flex items-center justify-between pt-6">
-          <Link smooth to="#home">
+          <Link smooth to="/#home">
             <div className="cursor-pointer hover:animate-bounce font-logo text-xl font-bold tracking-normal sm:text-2xl 3xl:text-4xl">
               Gorkem.
             </div>
@@ -28,7 +28,7 @@ function Navbar({ isFooter }) {
                 element={
                   <Link
                     smooth
-                    to="#home"
+                    to="/#home"
                     aria-label="Scroll to the work section."
                   >
                     <div className="cursor-pointer sm:block sm:text-2xl 3xl:text-3xl">
@@ -43,7 +43,7 @@ function Navbar({ isFooter }) {
                 element={
                   <Link
                     smooth
-                    to="#work"
+                    to="/#work"
                     aria-label="Scroll to the work section."
                   >
                     <div className="cursor-pointer sm:block sm:text-2xl 3xl:text-3xl">
@@ -58,7 +58,7 @@ function Navbar({ isFooter }) {
                 element={
                   <Link
                     smooth
-                    to="#whatIDo"
+                    to="/#whatIDo"
                     aria-label="Scroll to the work section at the end of the page."
                   >
                     <div className="cursor-pointer sm:block sm:text-2xl 3xl:text-3xl">
@@ -74,7 +74,7 @@ function Navbar({ isFooter }) {
       ) : (
         <>
           <nav className="flex items-center max-container justify-between landscape:max-xl:pb-2 px-4 pt-6 sm:px-8 sm:py-12 xl:px-[6rem]">
-            <Link smooth to="#home">
+            <Link smooth to="/#home">
               <div className="cursor-pointer hover:animate-bounce font-logo text-xl font-semibold tracking-tight sm:text-2xl 3xl:text-4xl">
                 Gorkem.
               </div>
@@ -85,7 +85,7 @@ function Navbar({ isFooter }) {
                   element={
                     <Link
                       smooth
-                      to="#work"
+                      to="/#work"
                       aria-label="Scroll to the work section."
                     >
                       <div className="hidden cursor-pointer sm:block text-xl 3xl:text-2xl">
@@ -100,7 +100,7 @@ function Navbar({ isFooter }) {
                   element={
                     <Link
                       smooth
-                      to="#footer"
+                      to="/#footer"
                       aria-label="Scroll to the work section at the end of the page."
                     >
                       <div className="hidden cursor-pointer sm:block text-xl 3xl:text-2xl">
@@ -190,12 +190,12 @@ function Navbar({ isFooter }) {
             </svg>
           </nav>
           <div className="menu pointer-events-none absolute flex z-20 h-[6.25rem] w-[calc(100vw-1rem)] -translate-y-20 flex-col justify-center gap-3 bg-[#A4B9A0] p-4 font-playfair font-bold tracking-tight opacity-0 transition-all duration-500 sm:hidden">
-            <Link smooth to="#work" aria-label="Scroll to the work section.">
+            <Link smooth to="/#work" aria-label="Scroll to the work section.">
               <div className="cursor-pointer hover:text-primary">my work</div>
             </Link>
             <Link
               smooth
-              to="#footer"
+              to="/#footer"
               aria-label="Scroll to the work section at the end of the page."
             >
               <div className="cursor-pointer hover:text-primary">

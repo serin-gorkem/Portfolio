@@ -1,5 +1,7 @@
 import Home from "./sections/Home";
 import PropTypes from "prop-types";
+import { Suspense } from "react";
+import { useEffect } from "react";
 import { lazy, memo } from "react";
 const Footer = lazy(() => import("./components/Footer"));
 const Work = lazy(() => import("./sections/Work"));
@@ -16,9 +18,11 @@ const Landing = memo(function Landing() {
         "secondary":"#3C4510",
         "highlight":"#E3FFEF" 
   */
-
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  });
   return (
-    <>
+    <Suspense fallback={<h1>Loading...</h1>} >
       <Home />
       <PageIndicator page={1} />
       <Work />
@@ -26,7 +30,7 @@ const Landing = memo(function Landing() {
       <WhatIDo />
       <PageIndicator page={3} />
       <Footer />
-    </>
+    </Suspense>
   );
 });
 function PageIndicator({ page }) {
