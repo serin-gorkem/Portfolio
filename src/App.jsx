@@ -1,4 +1,3 @@
-import Navbar from "./components/Navbar";
 import Landing from "./Landing";
 import Showcase from "./Showcase";
 import { BrowserRouter } from "react-router-dom";

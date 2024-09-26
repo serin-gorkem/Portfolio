@@ -19,7 +19,7 @@ function Footer() {
             />
           }
         </div>
-        <p className="pb-2 font-lato font-light leading-relaxed tracking-[%2] opacity-60 sm:text-2xl sm:leading-relaxed xl:w-[61.25rem]">
+        <p className="pb-1 font-lato font-light text-sm leading-relaxed tracking-[%2] opacity-60 sm:text-2xl sm:leading-relaxed xl:w-[61.25rem]">
           If you need a modern and powerful website for your business, startup
           or yourself, I am available for work. You can email me directly at :
         </p>
@@ -42,8 +42,8 @@ function Footer() {
         <div aria-label="social accounts" className=" flex mb-8 gap-2">
           <a href="https://www.linkedin.com/in/gorkem-serin-097606227/" aria-label="Linkedin" className="hover:-translate-y-3 transition-all duration-500">
             <svg
-              width="48px"
-              height="48px"
+              width="36px"
+              height="36px"
               viewBox="0 0 192 192"
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -88,8 +88,8 @@ function Footer() {
           </a>
           <a href="https://github.com/serin-gorkem" aria-label="Github" className="hover:-translate-y-3 transition-all duration-500">
             <svg
-              width="48px"
-              height="48px"
+              width="36px"
+              height="36px"
               viewBox="0 0 192 192"
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -115,8 +115,8 @@ function Footer() {
           </a>
           <a href="https://www.instagram.com/gorkemseriin/" aria-label="Instagram" className="hover:-translate-y-3 transition-all duration-500">
             <svg
-              width="48px"
-              height="48px"
+              width="36px"
+              height="36px"
               viewBox="0 0 192 192"
               xmlns="http://www.w3.org/2000/svg"
               fill="none"

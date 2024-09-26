@@ -46,8 +46,8 @@ function Showcase() {
         <a href="#" aria-label="Go back">
         <Link smooth to={"#top"} className="w-full flex justify-end max-container">
           <svg
-            width="64px"
-            height="64px"
+            width="48px"
+            height="48px"
             className=" z-50 bottom-0 right-10 animate-bounce"
             viewBox="0 0 24 24"
             fill="none"
