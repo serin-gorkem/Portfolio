@@ -35,15 +35,15 @@ function Showcase() {
           </button>
         </div>
         <Suspense fallback={<h1>Loading...</h1>}>
-        <LazyLoadImage
-            alt="hotel page design full page image"
-            src="./Hotel-Showcase.webp"
-            loading="lazy"
-            width={"100px"}
-            height={"100px"}
-            className="sm:w-[64rem] w-full"
-        />
-
+        <img
+          decoding="async"
+          rel="preload"
+          width={"100%"}
+          height={"100%"}
+          className="sm:w-[64rem] w-full"
+          src="./Hotel-Showcase.webp"
+          alt="hotel page design full page image"
+        ></img>
         </Suspense>
       </main>
         <Link smooth to={"#top"} aria-label="Go back to top" className="w-full flex justify-end max-container">
