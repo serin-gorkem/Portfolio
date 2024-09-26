@@ -18,7 +18,7 @@ function Navbar({ isFooter }) {
       {isFooter ? (
         <nav className="flex items-center justify-between pt-6">
           <Link smooth to="#home">
-            <div className="cursor-pointer font-logo text-xl font-bold tracking-normal sm:text-2xl 3xl:text-4xl">
+            <div className="cursor-pointer hover:animate-bounce font-logo text-xl font-bold tracking-normal sm:text-2xl 3xl:text-4xl">
               Gorkem.
             </div>
           </Link>
@@ -75,7 +75,7 @@ function Navbar({ isFooter }) {
         <>
           <nav className="flex items-center max-container justify-between landscape:max-xl:pb-2 px-4 pt-6 sm:px-8 sm:py-12 xl:px-[6rem]">
             <Link smooth to="#home">
-              <div className="cursor-pointer font-logo text-xl font-semibold tracking-tight sm:text-2xl 3xl:text-4xl">
+              <div className="cursor-pointer hover:animate-bounce font-logo text-xl font-semibold tracking-tight sm:text-2xl 3xl:text-4xl">
                 Gorkem.
               </div>
             </Link>

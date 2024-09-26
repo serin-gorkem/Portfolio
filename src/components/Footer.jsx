@@ -40,7 +40,7 @@ function Footer() {
         </div>
         {/*Lawnicons Line Brand Icons, SVG REPO -- https://www.svgrepo.com/collection/lawnicons-line-brand-icons/*/}
         <div aria-label="social accounts" className=" flex mb-8 gap-2">
-          <a href="https://www.linkedin.com/in/gorkem-serin-097606227/" aria-label="Linkedin">
+          <a href="https://www.linkedin.com/in/gorkem-serin-097606227/" aria-label="Linkedin" className="hover:-translate-y-3 transition-all duration-500">
             <svg
               width="48px"
               height="48px"
@@ -86,7 +86,7 @@ function Footer() {
               </g>
             </svg>
           </a>
-          <a href="https://github.com/serin-gorkem" aria-label="Github">
+          <a href="https://github.com/serin-gorkem" aria-label="Github" className="hover:-translate-y-3 transition-all duration-500">
             <svg
               width="48px"
               height="48px"
@@ -113,7 +113,7 @@ function Footer() {
               </g>
             </svg>
           </a>
-          <a href="https://www.instagram.com/gorkemseriin/" aria-label="Instagram">
+          <a href="https://www.instagram.com/gorkemseriin/" aria-label="Instagram" className="hover:-translate-y-3 transition-all duration-500">
             <svg
               width="48px"
               height="48px"

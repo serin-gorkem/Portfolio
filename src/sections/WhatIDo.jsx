@@ -22,7 +22,7 @@ function WhatIDo() {
           <h1 className="pb-3 font-playfair text-xl font-bold sm:pb-6 sm:text-3xl">
             Design
           </h1>
-          <p className="font-lato leading-relaxed tracking-[%2] opacity-70 sm:w-[35rem] sm:text-xl sm:leading-relaxed">
+          <p className="font-lato font-light leading-relaxed tracking-[%2] opacity-70 sm:w-[35rem] sm:text-xl sm:leading-relaxed">
             I design beautiful and powerful websites for modern businesses.
             Any business today needs a website that wins customers&#39;
             trust and helps you do your business well. I make sure your
@@ -33,7 +33,7 @@ function WhatIDo() {
           <h1 className="pb-3 font-playfair text-xl font-bold sm:pb-6 sm:text-3xl">
             Development
           </h1>
-          <p className="font-lato leading-relaxed tracking-[%2] opacity-70 sm:w-[35rem] sm:text-xl sm:leading-relaxed">
+          <p className="font-lato font-light leading-relaxed tracking-[%2] opacity-70 sm:w-[35rem] sm:text-xl sm:leading-relaxed">
             I build websites with mostly React and Webflow where I can
             create responsive, powerful and fully custom websites. Plus,
             Webflow has an incredibly simple Content Editor for you and your
