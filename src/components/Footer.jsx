@@ -21,7 +21,7 @@ function Footer() {
         </div>
         <p className="pb-1 font-lato font-light text-sm leading-relaxed tracking-[%2] opacity-60 sm:text-2xl sm:leading-relaxed xl:w-[61.25rem]">
           If you need a modern and powerful website for your business, startup
-          or yourself, I am available for work. You can email me directly at :
+          or yourself, I am available for work. You can email me directly at:
         </p>
         <div className="mb-10">
           {
