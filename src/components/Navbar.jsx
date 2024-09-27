@@ -81,7 +81,7 @@ function Navbar({ isFooter }) {
         <>
           <nav className="max-container flex items-center justify-between px-4 pt-6 sm:px-8 sm:py-12 xl:px-[6rem]">
             <Link smooth to="/#home">
-            <img className="cursor-pointer w-24 sm:w-36  3xl:w-52" src="Logo.webp">
+            <img className="cursor-pointer w-24 sm:w-36  3xl:w-52" src="Logo.webp" alt="Logo" aria-label="My own logo.">
             </img>
             </Link>
             <div className="flex items-center gap-8 font-playfair font-bold">
