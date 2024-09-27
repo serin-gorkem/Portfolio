@@ -25,11 +25,10 @@ function Navbar({ isFooter }) {
       {isFooter ? (
         <nav className="flex items-center justify-between pt-6">
           <Link smooth to="/#home">
-            <div className="cursor-pointer font-logo text-xl font-bold tracking-normal sm:text-2xl 3xl:text-4xl">
-              Gorkem.
-            </div>
+          <img className="cursor-pointer w-24 sm:w-36" src="Logo.webp">
+            </img>
           </Link>
-          <div className="flex items-center gap-2 sm:gap-8">
+          <div className="flex sm:items-center gap-2 sm:gap-8">
             {
               <Highlight
                 element={
@@ -38,7 +37,7 @@ function Navbar({ isFooter }) {
                     to="/#home"
                     aria-label="Scroll to the work section."
                   >
-                    <div className="cursor-pointer sm:block sm:text-2xl 3xl:text-3xl">
+                    <div className="cursor-pointer text-sm sm:block sm:text-2xl 3xl:text-3xl">
                       home
                     </div>
                   </Link>
@@ -53,7 +52,7 @@ function Navbar({ isFooter }) {
                     to="/#work"
                     aria-label="Scroll to the work section."
                   >
-                    <div className="cursor-pointer sm:block sm:text-2xl 3xl:text-3xl">
+                    <div className="cursor-pointer text-sm sm:block sm:text-2xl 3xl:text-3xl">
                       my work
                     </div>
                   </Link>
@@ -68,7 +67,7 @@ function Navbar({ isFooter }) {
                     to="/#whatIDo"
                     aria-label="Scroll to the work section at the end of the page."
                   >
-                    <div className="cursor-pointer sm:block sm:text-2xl 3xl:text-3xl">
+                    <div className="cursor-pointer text-sm sm:block sm:text-2xl 3xl:text-3xl">
                       what I do
                     </div>
                   </Link>
@@ -82,9 +81,8 @@ function Navbar({ isFooter }) {
         <>
           <nav className="max-container flex items-center justify-between px-4 pt-6 sm:px-8 sm:py-12 xl:px-[6rem]">
             <Link smooth to="/#home">
-              <div className="cursor-pointer font-logo text-xl font-semibold tracking-tight sm:text-2xl 3xl:text-4xl">
-                Gorkem.
-              </div>
+            <img className="cursor-pointer w-24 sm:w-36  3xl:w-52" src="Logo.webp">
+            </img>
             </Link>
             <div className="flex items-center gap-8 font-playfair font-bold">
               {
