@@ -199,14 +199,14 @@ function Navbar({ isFooter }) {
             <Link smooth to="/#work" aria-label="Scroll to the work section.">
               <div className="cursor-pointer hover:text-primary">my work</div>
             </Link>
-            <div
+            <a
               onClick={goBottom}
-              aria-label="Scroll to the work section at the end of the page."
+              aria-label="Scroll to the footer section at the end of the page."
             >
               <div className="cursor-pointer hover:text-primary">
                 get in touch
               </div>
-            </div>
+            </a>
           </div>
         </>
       )}
