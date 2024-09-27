@@ -1,8 +1,6 @@
-import Landing from "./Landing";
-//import { BrowserRouter } from "react-router-dom";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Landing from "./Landing";
 import Showcase from "./Showcase";
-
 import ErrorPage from "./error-page.jsx";
 
 const router = createBrowserRouter([

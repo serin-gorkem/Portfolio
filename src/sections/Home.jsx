@@ -1,48 +1,52 @@
 import Navbar from "../components/Navbar";
 import Highlight from "../components/Highlight";
 import { HashLink as Link } from "react-router-hash-link";
-
+import 'aos/dist/aos.css';
+import AOS from 'aos';
+AOS.init();
+/**
+ * @description The Home component is the main page of the website, showcasing the developer's skills and services.
+ * @returns {JSX.Element} The JSX for the Home component.
+ */
 function Home() {
   return (
     <>
       {/* h-[calc(100vh-xrem)] xrem = 16 * x px which is the length of margin top + bottom to keep box centered. */}
       <article
         id="home"
-        className="m-2 h-[calc(100vh-1rem)] bg-primary xl:m-4 landscape:max-xl:h-fit xl:h-[calc(100vh-2rem)]"
+        className="m-2 h-[calc(100vh-1rem)] bg-primary xl:m-4 xl:h-[calc(100vh-2rem)] landscape:max-xl:h-fit"
       >
         <Navbar isFooter={false} />
-        <main className="max-container landscape:max-xl:h-fit -z-10 flex h-[calc(100vh-10rem)] flex-col justify-center p-4 sm:h-[calc(100vh-14rem)] sm:px-8 xl:px-[6rem]">
-
-          <h1 className="font-playfair animate-fade-in text-3xl font-extrabold leading-tight tracking-tighter sm:text-[3rem] sm:leading-tight 3xl:text-[5rem] 3xl:leading-tight">
+        <main className="max-container -z-10 flex h-[calc(100vh-10rem)] flex-col justify-center p-4 sm:h-[calc(100vh-14rem)] sm:px-8 xl:px-[6rem] landscape:max-xl:h-fit">
+          <h1 data-aos="fade-up" className="font-playfair text-3xl font-extrabold leading-tight tracking-tighter sm:text-[3rem] sm:leading-tight 3xl:text-[5rem] 3xl:leading-tight">
             Hi, I&#39;m Gorkem,
           </h1>
           {/* Highlight is a component which adds custom highlights to selected texts. */}
-          <div className="animate-fade-in">
-          {
-            <Highlight
-              element={
-                <p className="font-playfair text-3xl font-extrabold leading-tight tracking-tighter sm:text-[3rem] sm:leading-tight 3xl:text-[5rem] 3xl:leading-tight">
-                  Web Developer,
-                </p>
-              }
-            />
-          }
+          <div data-aos="fade-up">
+            {
+              <Highlight
+                element={
+                  <p className="font-playfair text-3xl font-extrabold leading-tight tracking-tighter sm:text-[3rem] sm:leading-tight 3xl:text-[5rem] 3xl:leading-tight">
+                    Web Developer,
+                  </p>
+                }
+              />
+            }
           </div>
-          <div className="animate-fade-in">
-          {
-            <Highlight
-              element={
-                <p className="font-playfair text-3xl font-extrabold leading-tight tracking-tighter sm:text-[3rem] sm:leading-tight 3xl:text-[5rem] 3xl:leading-tight">
-                  Web Designer,
-                </p>
-              }
-            />
-          }
+          <div data-aos="fade-up">
+            {
+              <Highlight
+                element={
+                  <p className="font-playfair text-3xl font-extrabold leading-tight tracking-tighter sm:text-[3rem] sm:leading-tight 3xl:text-[5rem] 3xl:leading-tight">
+                    Web Designer,
+                  </p>
+                }
+              />
+            }
           </div>
-
           {/* This two is wrapped with a div because I wanted them to be one line. */}
-          <div className="flex gap-1 animate-fade-in sm:gap-2">
-            <h1 className="font-playfair text-3xl font-extrabold leading-tight tracking-tighter sm:text-[3rem] sm:leading-tight 3xl:text-[5rem] 3xl:leading-tight">
+          <div data-aos="fade-up" className="flex  gap-1 sm:gap-2">
+            <h1  className="font-playfair text-3xl font-extrabold leading-tight tracking-tighter sm:text-[3rem] sm:leading-tight 3xl:text-[5rem] 3xl:leading-tight">
               and
             </h1>
             {
@@ -55,12 +59,12 @@ function Home() {
               />
             }
           </div>
-          <h2 className="py-8 font-lato animate-fade-in text-[0.875rem] font-light leading-[150%] tracking-[2%] text-black opacity-70 sm:w-[40rem] sm:text-xl sm:leading-[150%] 3xl:w-[56.25rem] 3xl:text-2xl">
+          <h2 data-aos="fade-up" className=" py-8 font-lato text-[0.875rem] font-light leading-[150%] tracking-[2%] text-black opacity-70 sm:w-[40rem] sm:text-xl sm:leading-[150%] 3xl:w-[56.25rem] 3xl:text-2xl">
             I design and build beautiful websites for businesses around the
             globe. If you need a modern and powerful website, send me an email.
             If we are a good fit, I will give you a time and cost estimate.
           </h2>
-          <div className="relative animate-fade-in  h-[3.5rem] w-[9.625rem] border-2 border-secondary sm:h-[3.75rem] sm:w-[10.625rem]">
+          <div data-aos="fade-up" className="relative h-[3.5rem] w-[9.625rem]  border-2 border-secondary sm:h-[3.75rem] sm:w-[10.625rem]">
             {/* CTA Button with the animation logic of moving it on the x and y with transition */}
             <Link smooth to="#work" className="p-4">
               <button className="h-[3.5rem] w-[9.625rem] -translate-x-8 -translate-y-2 bg-secondary font-lato text-xs text-white transition-all duration-500 hover:-translate-x-4 hover:translate-y-0 sm:h-[3.75rem] sm:w-[10.625rem] sm:text-base">

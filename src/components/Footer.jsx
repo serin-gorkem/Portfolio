@@ -1,9 +1,12 @@
-import Highlight from "../components/Highlight";
 import { lazy } from "react";
 const Navbar = lazy(() => import("../components/Navbar"));
+const Highlight = lazy(() => import("../components/Highlight"));
+import 'aos/dist/aos.css';
+import AOS from 'aos';
+AOS.init();
 function Footer() {
   return (
-    <footer id="footer" className="m-2 bg-primary xl:m-4">
+    <footer data-aos="fade-up" id="footer" className="m-2 bg-primary xl:m-4">
       <section className="max-container relative w-full p-4 py-8 sm:px-8 sm:py-16 xl:px-[6rem]">
         <div className="mb-4 flex gap-1 sm:h-12 sm:gap-1 xl:mb-8">
           <h1 className="font-playfair text-3xl font-extrabold tracking-tighter sm:pb-10 sm:text-5xl xl:pb-8">

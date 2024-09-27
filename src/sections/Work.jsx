@@ -1,5 +1,9 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import 'aos/dist/aos.css';
+import AOS from 'aos';
+AOS.init();
+
 /**
  * @description This function takes an array of project data and returns a JSX element that displays each project in a card format.
  * @param {Array} projectData - An array of objects containing information about each project. Each object should have the following properties:
@@ -56,7 +60,7 @@ function Work() {
       description:
         "WeatherPulse is a dynamic, responsive weather forecasting app designed using Figma and built with EJS, Node.js, OpenWeather API, Express, Axios, and Tailwind CSS...",
       showcaseDescription:
-        "WeatherPulse is a dynamic, responsive weather forecasting app designed using Figma and built with EJS, Node.js, OpenWeather API, Express, Axios, and Tailwind CSS. The clean, modern design provides real-time weather updates with a simple, intuitive interface. Users can easily search for any location and get detailed weather data, including temperature, humidity, wind speed, and more. The minimalist UI, coupled with Tailwind CSS, ensures a seamless experience across all devices.",
+        "WeatherPulse is a dynamic, responsive weather forecasting app designed using Figma and built with EJS, Node.js, OpenWeather API, Express, Axios, and Tailwind CSS. The clean, modern design provides real-time weather updates with a simple, intuitive interface. Users can easily search for any location and get detailed weather data, including temperature, humidity, wind speed, and more. The minimalist UI, coupled with Tailwind CSS, ensures a seamless experience across all devices. Since this was a template project, it can load a little bit late but it has 98 score on page speed insight. ",
       link: "https://weatherpulse.onrender.com/",
       buttonText: " visit live site",
       image: "./WeatherPulse.webp",
@@ -183,6 +187,7 @@ function Work() {
         return (
           <section
             key={project.id}
+            data-aos="fade-up"
             className="max-container my-8 flex flex-col justify-between p-4 sm:items-start sm:px-8 xl:flex-row xl:items-center xl:px-[6rem]"
           >
             {/* Left - Top div */}
@@ -212,9 +217,9 @@ function Work() {
               <p className="font-lato font-light leading-[175%] tracking-normal sm:text-[1.125rem] sm:leading-[175%] xl:w-[26rem]">
                 {projectData[project.id].description}
               </p>
-              <div className="relative h-[2.75rem] w-[8.625rem] border-2 border-secondary sm:h-[3.75rem] sm:w-[10.625rem]">
+              <div className="relative h-[3.75rem] w-[9.625rem] border-2 border-secondary sm:h-[3.75rem] sm:w-[10.625rem]">
                 <Link to="/showcase" state={{ project }}>
-                  <button className="h-[2.75rem] w-[8.625rem] -translate-x-2 -translate-y-2 bg-secondary font-lato text-xs text-white transition-all duration-500 hover:translate-x-0 hover:translate-y-0 sm:h-[3.75rem] sm:w-[10.625rem] sm:text-base">
+                  <button className="h-[3.75rem] w-[9.625rem] -translate-x-2 -translate-y-2 bg-secondary font-lato text-xs text-white transition-all duration-500 hover:translate-x-0 hover:translate-y-0 sm:h-[3.75rem] sm:w-[10.625rem] sm:text-base">
                     see this work
                   </button>
                 </Link>

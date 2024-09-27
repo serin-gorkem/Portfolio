@@ -1,8 +1,8 @@
-import Home from "./sections/Home";
-import PropTypes from "prop-types";
 import { Suspense } from "react";
 import { useEffect } from "react";
 import { lazy, memo } from "react";
+import PropTypes from "prop-types";
+import Home from "./sections/Home";
 const Footer = lazy(() => import("./components/Footer"));
 const Work = lazy(() => import("./sections/Work"));
 const WhatIDo = lazy(() => import("./sections/WhatIDo"));
