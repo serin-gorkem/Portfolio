@@ -1,8 +1,8 @@
 import { lazy } from "react";
 const Navbar = lazy(() => import("../components/Navbar"));
 const Highlight = lazy(() => import("../components/Highlight"));
-import 'aos/dist/aos.css';
-import AOS from 'aos';
+import "aos/dist/aos.css";
+import AOS from "aos";
 AOS.init();
 /**
  * @description The Footer component displays the developer's contact information and social media links.
@@ -25,7 +25,7 @@ function Footer() {
             />
           }
         </div>
-        <p className="pb-1 font-lato font-light text-sm leading-relaxed tracking-[%2] opacity-60 sm:text-2xl sm:leading-relaxed xl:w-[61.25rem]">
+        <p className="pb-1 font-lato text-sm font-light leading-relaxed tracking-[%2] opacity-60 sm:text-2xl sm:leading-relaxed xl:w-[61.25rem]">
           If you need a modern and powerful website for your business, startup
           or yourself, I am available for work. You can email me directly at:
         </p>
@@ -45,8 +45,15 @@ function Footer() {
           }
         </div>
         {/*Lawnicons Line Brand Icons, SVG REPO -- https://www.svgrepo.com/collection/lawnicons-line-brand-icons/*/}
-        <div aria-label="social accounts" className=" flex mb-8 gap-2">
-          <a href="https://www.linkedin.com/in/gorkem-serin-097606227/" aria-label="Linkedin" className="hover:-translate-y-3 transition-all duration-500">
+        <div
+          aria-label="social accounts"
+          className="mb-8 flex items-center gap-8"
+        >
+          <a
+            href="https://www.linkedin.com/in/gorkem-serin-097606227/"
+            aria-label="Linkedin"
+            className="transition-all duration-500 hover:-translate-y-3"
+          >
             <svg
               width="36px"
               height="36px"
@@ -92,7 +99,11 @@ function Footer() {
               </g>
             </svg>
           </a>
-          <a href="https://github.com/serin-gorkem" aria-label="Github" className="hover:-translate-y-3 transition-all duration-500">
+          <a
+            href="https://github.com/serin-gorkem"
+            aria-label="Github"
+            className="transition-all duration-500 hover:-translate-y-3"
+          >
             <svg
               width="36px"
               height="36px"
@@ -119,7 +130,11 @@ function Footer() {
               </g>
             </svg>
           </a>
-          <a href="https://www.instagram.com/gorkemseriin/" aria-label="Instagram" className="hover:-translate-y-3 transition-all duration-500">
+          <a
+            href="https://www.instagram.com/gorkemseriin/"
+            aria-label="Instagram"
+            className="transition-all duration-500 hover:-translate-y-3"
+          >
             <svg
               width="36px"
               height="36px"
@@ -153,6 +168,36 @@ function Footer() {
                 <circle cx="135" cy="57" r="9" fill="#000000" />
               </g>
             </svg>
+          </a>
+          <a href="https://drive.google.com/file/d/1Rpd7PwkOhD9-jPsSg8PExH9r9VH7IvX5/view?usp=sharing" aria-label="download CV" className="group relative transition-all duration-500 hover:-translate-y-3">
+            <svg
+              width="36px"
+              height="36px"
+              viewBox="0 0 192 192"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              className=""
+              transform="matrix(1, 0, 0, -1, 0, 0)"
+            >
+              <g id="SVGRepo_bgCarrier" strokeWidth="0" />
+
+              <g
+                id="SVGRepo_tracerCarrier"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+
+              <g id="SVGRepo_iconCarrier">
+                <path
+                  stroke="#000000"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="12"
+                  d="M33 85.004h36.257v53.494h53.494V85.004h36.257L96.004 22 33 85.004ZM40.133 170h111.743"
+                />
+              </g>
+            </svg>
+          <p className="group-hover:opacity-100 opacity-0 transition-all absolute w-36 left-1/2 -translate-x-1/2 text-center  ">Download CV</p>
           </a>
         </div>
         <Navbar isFooter={true} />
