@@ -25,7 +25,7 @@ function Navbar({ isFooter }) {
       {isFooter ? (
         <nav className="flex items-center justify-between pt-6">
           <Link smooth to="/#home">
-          <img className="cursor-pointer w-24 sm:w-36" src="Logo.webp">
+          <img className="cursor-pointer w-24 sm:w-36" src="Logo.webp" alt="Logo" aria-label="My own logo.">
             </img>
           </Link>
           <div className="flex sm:items-center gap-2 sm:gap-8">
