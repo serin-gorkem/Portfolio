@@ -105,14 +105,14 @@ function Navbar({ isFooter }) {
               {
                 <Highlight
                   element={
-                    <div
+                    <button
                       onClick={goBottom}
                       aria-label="Scroll to the work section at the end of the page."
                     >
                       <div className="hidden cursor-pointer text-xl sm:block 3xl:text-2xl">
                         get in touch
                       </div>
-                    </div>
+                    </button>
                   }
                 />
               }
@@ -199,14 +199,15 @@ function Navbar({ isFooter }) {
             <Link smooth to="/#work" aria-label="Scroll to the work section.">
               <div className="cursor-pointer hover:text-primary">my work</div>
             </Link>
-            <a
+            <button
+            className="text-left"
               onClick={goBottom}
               aria-label="Scroll to the footer section at the end of the page."
             >
               <div className="cursor-pointer hover:text-primary">
                 get in touch
               </div>
-            </a>
+            </button>
           </div>
         </>
       )}
