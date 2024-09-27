@@ -1,7 +1,11 @@
+import { lazy } from "react";
 import { HashLink as Link } from "react-router-hash-link";
-import Highlight from "./Highlight";
-import PropTypes from "prop-types";
-
+const Highlight = lazy(() => import("./Highlight"));
+const PropTypes = lazy(() => import("prop-types"));
+/**
+ * @description The Navbar component helps user to navigate inside the page.
+ * @param {Boolean} isFooter - A boolean prop that determines whether the navbar is a footer navbar or a home navbar.
+ */
 function Navbar({ isFooter }) {
   /* To open and close menu with toggle hidden attribute. */
   function openMenu() {
@@ -11,10 +15,13 @@ function Navbar({ isFooter }) {
     menu.classList.toggle("pointer-events-none");
     document.querySelector(".menu-toggle").classList.toggle("hidden");
   }
+  function goBottom() {
+    window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" });
+  }
 
   return (
     <>
-    {/* Since I want two types of navigation bar, instead of codding it from scratch, I used a logic to show me a footer navbar if the props isFooter true, and home navbar if false. */}
+      {/* Since I want two types of navigation bar, instead of codding it from scratch, I used a logic to show me a footer navbar if the props isFooter true, and home navbar if false. */}
       {isFooter ? (
         <nav className="flex items-center justify-between pt-6">
           <Link smooth to="/#home">
@@ -73,13 +80,13 @@ function Navbar({ isFooter }) {
         </nav>
       ) : (
         <>
-          <nav className="flex items-center max-container justify-between px-4 pt-6 sm:px-8 sm:py-12 xl:px-[6rem]">
+          <nav className="max-container flex items-center justify-between px-4 pt-6 sm:px-8 sm:py-12 xl:px-[6rem]">
             <Link smooth to="/#home">
               <div className="cursor-pointer font-logo text-xl font-semibold tracking-tight sm:text-2xl 3xl:text-4xl">
                 Gorkem.
               </div>
             </Link>
-            <div className="flex items-center font-playfair font-bold gap-8">
+            <div className="flex items-center gap-8 font-playfair font-bold">
               {
                 <Highlight
                   element={
@@ -88,7 +95,7 @@ function Navbar({ isFooter }) {
                       to="/#work"
                       aria-label="Scroll to the work section."
                     >
-                      <div className="hidden cursor-pointer sm:block text-xl 3xl:text-2xl">
+                      <div className="hidden cursor-pointer text-xl sm:block 3xl:text-2xl">
                         my work
                       </div>
                     </Link>
@@ -98,15 +105,14 @@ function Navbar({ isFooter }) {
               {
                 <Highlight
                   element={
-                    <Link
-                      smooth
-                      to="/#footer"
+                    <div
+                      onClick={goBottom}
                       aria-label="Scroll to the work section at the end of the page."
                     >
-                      <div className="hidden cursor-pointer sm:block text-xl 3xl:text-2xl">
+                      <div className="hidden cursor-pointer text-xl sm:block 3xl:text-2xl">
                         get in touch
                       </div>
-                    </Link>
+                    </div>
                   }
                 />
               }
@@ -189,19 +195,18 @@ function Navbar({ isFooter }) {
               </g>
             </svg>
           </nav>
-          <div className="menu pointer-events-none absolute flex z-20 h-[6.25rem] w-[calc(100vw-1rem)] -translate-y-20 flex-col justify-center gap-3 bg-[#A4B9A0] p-4 font-playfair font-bold tracking-tight opacity-0 transition-all duration-500 sm:hidden">
+          <div className="menu pointer-events-none absolute z-20 flex h-[6.25rem] w-[calc(100vw-1rem)] -translate-y-20 flex-col justify-center gap-3 bg-[#A4B9A0] p-4 font-playfair font-bold tracking-tight opacity-0 transition-all duration-500 sm:hidden">
             <Link smooth to="/#work" aria-label="Scroll to the work section.">
               <div className="cursor-pointer hover:text-primary">my work</div>
             </Link>
-            <Link
-              smooth
-              to="/#footer"
+            <div
+              onClick={goBottom}
               aria-label="Scroll to the work section at the end of the page."
             >
               <div className="cursor-pointer hover:text-primary">
                 get in touch
               </div>
-            </Link>
+            </div>
           </div>
         </>
       )}

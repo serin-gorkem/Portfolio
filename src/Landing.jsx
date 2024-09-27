@@ -2,10 +2,14 @@ import { Suspense } from "react";
 import { useEffect } from "react";
 import { lazy, memo } from "react";
 import PropTypes from "prop-types";
-import Home from "./sections/Home";
-const Footer = lazy(() => import("./components/Footer"));
+const Home = lazy(() => import("./sections/Home"));
 const Work = lazy(() => import("./sections/Work"));
+const Footer = lazy(() => import("./components/Footer"));
 const WhatIDo = lazy(() => import("./sections/WhatIDo"));
+
+/**
+ * @description The Landing component is the main page of the website, showcasing the developer's skills and services.
+ */
 
 const Landing = memo(function Landing() {
   /*         
@@ -22,7 +26,7 @@ const Landing = memo(function Landing() {
     window.scrollTo(0, 0);
   });
   return (
-    <Suspense fallback={<h1>Loading...</h1>} >
+    <Suspense fallback={<h1 className="flex justify-center items-center h-screen">Loading...</h1>} >
       <Home />
       <PageIndicator page={1} />
       <Work />

@@ -1,6 +1,9 @@
 import PropTypes from "prop-types";
 
-
+/**
+ * @description The Highlight component is a component that can be used to highlight texts.
+ * @param {node} element - The DOM element to add highlight effect to. 
+ */
 function Highlight({element}){
   /* This function is used to highlight the hovered element with a gradient background. */
     return(

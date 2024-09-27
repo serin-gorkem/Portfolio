@@ -4,6 +4,9 @@ const Highlight = lazy(() => import("../components/Highlight"));
 import 'aos/dist/aos.css';
 import AOS from 'aos';
 AOS.init();
+/**
+ * @description The Footer component displays the developer's contact information and social media links.
+ */
 function Footer() {
   return (
     <footer data-aos="fade-up" id="footer" className="m-2 bg-primary xl:m-4">

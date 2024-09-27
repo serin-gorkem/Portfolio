@@ -1,11 +1,15 @@
-import { memo, Suspense } from "react";
-import Footer from "./components/Footer";
-import Navbar from "./components/Navbar";
+import { lazy, memo, Suspense } from "react";
 import { useLocation } from "react-router-dom";
 import { useEffect } from "react";
+const Navbar = lazy(() => import("./components/Navbar"));
+const Footer = lazy(() => import("./components/Footer"));
 import "aos/dist/aos.css";
 import AOS from "aos";
 AOS.init();
+/**
+ * @description The Showcase component displays a project's details and image.
+ * @param {Object} props - The props object contains the project data.
+ */
 
 const Showcase = memo(function Showcase() {
   const location = useLocation();
@@ -14,6 +18,9 @@ const Showcase = memo(function Showcase() {
   useEffect(() => {
     window.scrollTo(0, 0);
   });
+    /**
+   * @description The goBackTop function scrolls the window to the top.
+   */
   function goBackTop() {
     window.scrollTo({ top: 0, behavior: "smooth" });
   }

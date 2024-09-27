@@ -1,12 +1,12 @@
-import Navbar from "../components/Navbar";
-import Highlight from "../components/Highlight";
+import { lazy } from "react";
 import { HashLink as Link } from "react-router-hash-link";
+const Navbar = lazy(() => import("../components/Navbar"));
+const Highlight = lazy(() => import("../components/Highlight"));
 import 'aos/dist/aos.css';
 import AOS from 'aos';
 AOS.init();
 /**
  * @description The Home component is the main page of the website, showcasing the developer's skills and services.
- * @returns {JSX.Element} The JSX for the Home component.
  */
 function Home() {
   return (
