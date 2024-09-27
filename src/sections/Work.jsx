@@ -106,7 +106,7 @@ function Work() {
         "The React Nike App is a responsive e-commerce website developed through a React and Tailwind CSS tutorial...",
       showcaseDescription:
         "The React Nike App is a responsive e-commerce website developed through a React and Tailwind CSS tutorial. The app features a clean and dynamic interface that showcases products in a grid format. Built with React for efficient rendering and Tailwind CSS for rapid styling, the project emphasizes modular components, smooth navigation, and fast load times. This app simulates an online store experience, complete with product filtering and dynamic UI updates, while demonstrating the power of React and Tailwind in modern web development.",
-      link: "https://www.figma.com/design/19B4Ts2SMJCerIFwftbOGr/Responsive-Design-Template-(Copy)?node-id=2027-7&t=dTFkvUlk6xMYySfz-1",
+      link: "https://react-nike-app-cr.netlify.app/",
       buttonText: " visit live site",
       image: "./Nike.webp",
       alt: "Nike clone website.",
