@@ -25,10 +25,16 @@ function Navbar({ isFooter }) {
       {isFooter ? (
         <nav className="flex items-center justify-between pt-6">
           <Link smooth to="/#home">
-          <img className="cursor-pointer w-24 sm:w-36" src="Logo.webp" alt="Logo" aria-label="My own logo.">
-            </img>
+            <img
+              className="w-24 cursor-pointer sm:w-36"
+              width="100"
+              height="100"
+              src="Logo.webp"
+              alt="Logo"
+              aria-label="My own logo."
+            ></img>
           </Link>
-          <div className="flex sm:items-center gap-2 sm:gap-8">
+          <div className="flex gap-2 sm:items-center sm:gap-8">
             {
               <Highlight
                 element={
@@ -81,8 +87,14 @@ function Navbar({ isFooter }) {
         <>
           <nav className="max-container flex items-center justify-between px-4 pt-6 sm:px-8 sm:py-12 xl:px-[6rem]">
             <Link smooth to="/#home">
-            <img className="cursor-pointer w-24 sm:w-36  3xl:w-52" src="Logo.webp" alt="Logo" aria-label="My own logo.">
-            </img>
+              <img
+                className="w-24 cursor-pointer sm:w-36 3xl:w-52"
+                src="Logo.webp"
+                width="100"
+                height="100"
+                alt="Logo"
+                aria-label="My own logo."
+              ></img>
             </Link>
             <div className="flex items-center gap-8 font-playfair font-bold">
               {
@@ -198,7 +210,7 @@ function Navbar({ isFooter }) {
               <div className="cursor-pointer hover:text-primary">my work</div>
             </Link>
             <button
-            className="text-left"
+              className="text-left"
               onClick={goBottom}
               aria-label="Scroll to the footer section at the end of the page."
             >
