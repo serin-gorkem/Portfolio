@@ -16,7 +16,8 @@ export default {
         "logo":['Azeret Mono', 'Lato', 'sans-serif'],
       },
       screens:{
-        "3xl":"1920px"
+        "3xl":"1920px",
+        
       },
       keyframes: {
         "scroll": {
@@ -33,7 +34,7 @@ export default {
       animation: {
         'scroll-arrow': 'scroll 2s infinite',
         'fade-in': 'fade-in 1s ease-in-out',
-      }
+      },
     },
   },
   plugins: [
