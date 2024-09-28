@@ -169,7 +169,7 @@ function Footer() {
               </g>
             </svg>
           </a>
-          <a href="https://drive.google.com/file/d/1Rpd7PwkOhD9-jPsSg8PExH9r9VH7IvX5/view?usp=sharing" aria-label="download CV" className="group relative transition-all duration-500 hover:-translate-y-3">
+          <a href="https://drive.google.com/file/d/17aUD53d-_kGrmTcAGbSIzq8bEhIZbXL9/view?usp=sharing" aria-label="download CV" className="group relative transition-all duration-500 hover:-translate-y-3">
             <svg
               width="36px"
               height="36px"
