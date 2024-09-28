@@ -35,7 +35,7 @@ function Work() {
         "The Elysium Hotel website design focuses on elegance and user experience. It features a modern layout with visually captivating imagery, intuitive navigation, and a seamless booking system...",
       showcaseDescription:
         "The Elysium Hotel website design focuses on elegance and user experience. It features a modern layout with visually captivating imagery, intuitive navigation, and a seamless booking system. The website showcases the luxurious amenities of the hotel, including spacious rooms with stunning views, an outdoor infinity pool and, fine dining experiences. Special attention is given to mobile responsiveness, ensuring an optimal experience across all devices. The color scheme reflects the brand’s sophistication, while large visuals and clear typography guide users effortlessly through the site.",
-      link: "https://www.figma.com/design/19B4Ts2SMJCerIFwftbOGr/Responsive-Design-Template-(Copy)?node-id=2027-7&t=dTFkvUlk6xMYySfz-1",
+      link: "https://www.figma.com/design/qpD0Urqf1aFgNX2kbWXtE6/Elysium-Hotel?node-id=0-1&t=fup4HToJp8RAZABu-1",
       buttonText: " visit figma file",
       image: "./Hotel.webp",
       alt: "Hotel website design on figma.",
