@@ -5,7 +5,7 @@
 - [Technologies](#technologies)
 - [License](#license)
 
-## Project Timeline
+## Timeline
 It took 27 hours to complete this whole project, design was inspired from <a href="https://www.vakoshvili.com/#Portfolio">Vako Shvili</a>
 Although design was inspired, I created it on scratch with <a href= "https://www.figma.com/design/19B4Ts2SMJCerIFwftbOGr/Portfloio?node-id=2-5&t=R30AFcdUyWIAJp5m-1"> Figma </a>
 It showcases the following:
