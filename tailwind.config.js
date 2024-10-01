@@ -17,7 +17,6 @@ export default {
       },
       screens:{
         "3xl":"1920px",
-        
       },
       keyframes: {
         "scroll": {
