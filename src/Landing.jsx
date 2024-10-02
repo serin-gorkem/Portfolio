@@ -1,7 +1,7 @@
 import { Suspense } from "react";
 import { useEffect } from "react";
 import { lazy, memo } from "react";
-import TechStack from "./sections/TechStack";
+const TechStack = lazy(() => import("./sections/TechStack"));
 const Home = lazy(() => import("./sections/Home"));
 const Work = lazy(() => import("./sections/Work"));
 const Footer = lazy(() => import("./components/Footer"));
