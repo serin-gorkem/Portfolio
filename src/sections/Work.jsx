@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import PageDivider from "../components/PageDivider";
 import "aos/dist/aos.css";
 import AOS from "aos";
 AOS.init();
@@ -183,13 +184,14 @@ function Work() {
   ]);
   return (
     <article id="work" className="m-2 xl:m-4">
+      <PageDivider title="Selected" titleHighlight="work" page="01" />
       {/* I used a projectData array to store the information about the work title to specs. */}
       {projectData.map((project) => {
         return (
           <section
             key={project.id}
             data-aos="fade-up"
-            className="max-container my-8 flex flex-col justify-between p-4 sm:items-start sm:px-8 xl:flex-row xl:items-center xl:px-[6rem]"
+            className="max-container  flex flex-col justify-between p-4 sm:items-start sm:px-8 xl:flex-row xl:items-center xl:px-[6rem]"
           >
             {/* Left - Top div */}
             <section className="flex flex-col justify-between gap-6 text-text-white sm:gap-9 xl:w-8/12">
@@ -199,7 +201,7 @@ function Work() {
                   {projectData[project.id].type}
                 </h1>
                 {/* Project title  */}
-                <p className="font-title text-[2rem] font-extrabold leading-tight tracking-tighter sm:text-6xl sm:leading-tight xl:w-[26rem]">
+                <p className="font-title text-[2rem] font-medium leading-tight tracking-tighter sm:text-6xl sm:leading-tight xl:w-[26rem]">
                   {projectData[project.id].title}
                 </p>
               </div>
@@ -219,8 +221,8 @@ function Work() {
                 {projectData[project.id].description}
               </p>
               <div className="relative h-[3.75rem] w-[9.625rem] border-2 border-highlight sm:h-[3.75rem] sm:w-[10.625rem]">
-                <Link to="/showcase" className="p-2" state={{ project } }>
-                  <button className="h-[3.75rem] w-[9.625rem]  -translate-x-4 hover:-translate-x-2 hover:-translate-y-[0.13rem] -translate-y-2 bg-highlight font-lato text-xs text-white transition-all duration-500 sm:h-[3.75rem] sm:w-[10.625rem] sm:text-base">
+                <Link to="/showcase" className="p-2" state={{ project }}>
+                  <button className="h-[3.75rem] w-[9.625rem] -translate-x-4 -translate-y-2 bg-highlight font-lato text-xs font-bold text-white transition-all duration-500 hover:-translate-x-2 hover:-translate-y-[0.13rem] sm:h-[3.75rem] sm:w-[10.625rem] sm:text-base">
                     see this work
                   </button>
                 </Link>

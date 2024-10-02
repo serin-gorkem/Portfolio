@@ -15,6 +15,7 @@ export default {
         "lato":['Lato', 'sans-serif'],
       },
       screens:{
+        "xs":"375px",
         "3xl":"1920px",
       },
       keyframes: {

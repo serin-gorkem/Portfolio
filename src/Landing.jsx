@@ -1,6 +1,7 @@
 import { Suspense } from "react";
 import { useEffect } from "react";
 import { lazy, memo } from "react";
+import TechStack from "./sections/TechStack";
 const Home = lazy(() => import("./sections/Home"));
 const Work = lazy(() => import("./sections/Work"));
 const Footer = lazy(() => import("./components/Footer"));
@@ -28,6 +29,7 @@ const Landing = memo(function Landing() {
     <Suspense fallback={<h1 className="flex justify-center text-text-white items-center h-screen">Loading...</h1>} >
       <Home />
       <Work />
+      <TechStack/>
       <WhatIDo />
       <Footer />
     </Suspense>

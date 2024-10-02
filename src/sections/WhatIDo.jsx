@@ -1,30 +1,16 @@
-import { lazy } from "react";
-const Highlight = lazy(() => import("../components/Highlight"));
 import "aos/dist/aos.css";
 import AOS from "aos";
+import PageDivider from "../components/PageDivider";
 AOS.init();
 /**
  * @description The WhatIDo component describes the developer's skills and services.
  */
 function WhatIDo() {
   return (
-    <article id="whatIDo" className="m-2 xl:m-4">
-      <section className="max-container flex w-full text-text-white flex-col justify-between gap-8 p-4 sm:gap-16 sm:px-8 xl:flex-row xl:px-[6rem]">
-        <div className="flex gap-1 sm:h-16 sm:gap-2" data-aos="fade-up">
-          <h1 className="font-title text-4xl font-extrabold tracking-tight  sm:text-6xl">
-            What
-          </h1>
-          {
-            <Highlight
-              element={
-                <h1 className="font-title text-4xl font-extrabold tracking-tight  sm:text-6xl">
-                  I do
-                </h1>
-              }
-            />
-          }
-        </div>
-        <div className="flex flex-col gap-3 sm:gap-16 xl:gap-6">
+    <article id="whatIDo" className="m-2 pb-8 xl:m-4 sm:h-[calc(100vh-10rem)]">
+      <PageDivider title="What" titleHighlight="I do" page="03" />
+      <section className="max-container flex w-full text-text-white flex-col justify-between gap-8 p-4 sm:gap-16  sm:p-8 xl:flex-row xl:px-[6rem]">
+        <div className="flex flex-col justify-between w-full gap-12 xl:flex-row">
           <div data-aos="fade-up">
             <h1 className="pb-3 font-title text-xl font-bold sm:pb-6 sm:text-3xl">
               Design

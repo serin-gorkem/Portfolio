@@ -1,2 +1,8 @@
 User-agent: *
-Disallow: /
+Disallow: /admin/
+Disallow: /login/
+Disallow: /temp/
+Disallow: /private/
+Allow: /
+
+Sitemap: https://www.gorkemserin.com/sitemap.xml
