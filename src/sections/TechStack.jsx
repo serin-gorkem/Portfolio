@@ -39,65 +39,65 @@ export default TechStack;
 function TechList({ isFrontend }) {
   const frontend = [
     {
-      src: "./svg/html.svg",
+      src: "./svg/html-min.svg",
       alt: "HTML",
     },
     {
-      src: "./svg/css.svg",
+      src: "./svg/css-min.svg",
       alt: "CSS",
     },
     {
-      src: "./svg/js.svg",
+      src: "./svg/js-min.svg",
       alt: "JS",
     },
     {
-      src: "./svg/jquery.svg",
+      src: "./svg/jquery-min.svg",
       alt: "JQUERY",
     },
     {
-      src: "./svg/sass.svg",
+      src: "./svg/sass-min.svg",
       alt: "SASS",
     },
     {
-      src: "./svg/tailwind.svg",
+      src: "./svg/tailwind-min.svg",
       alt: "TAILWIND",
     },
     {
-      src: "./svg/reactjs.svg",
+      src: "./svg/reactjs-min.svg",
       alt: "REACTJS",
     },
     {
-      src: "./svg/figma.svg",
+      src: "./svg/figma-min.svg",
       alt: "FIGMA",
     },
   ];
   const backend = [
     {
-      src: "./svg/ejs.svg",
+      src: "./svg/ejs-min.svg",
       alt: "EJS",
     },
     {
-      src: "./svg/express.svg",
+      src: "./svg/express-min.svg",
       alt: "Express",
     },
     {
-      src: "./svg/git.svg",
+      src: "./svg/git-min.svg",
       alt: "GIT",
     },
     {
-      src: "./svg/node.svg",
+      src: "./svg/node-min.svg",
       alt: "NODEJS",
     },
     {
-      src: "./svg/pgsql.svg",
+      src: "./svg/pgsql-min.svg",
       alt: "PosgreSQL",
     },
     {
-      src: "./svg/api.svg",
+      src: "./svg/api-min.svg",
       alt: "API",
     },
     {
-      src: "./svg/axios.svg",
+      src: "./svg/axios-min.svg",
       alt: "AXIOS",
     },
   ];

@@ -13,13 +13,19 @@
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://www.gorkemserin.com/#home</loc>
+    <lastmod>2024-10-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://www.gorkemserin.com/#work</loc>
     <lastmod>2024-10-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.gorkemserin.com/#home</loc>
+    <loc>https://www.gorkemserin.com/#tech</loc>
     <lastmod>2024-10-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
