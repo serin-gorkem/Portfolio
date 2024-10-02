@@ -96,7 +96,7 @@ function Navbar({ isFooter }) {
                 aria-label="My own logo."
               ></img>
             </Link>
-            <div className="flex items-center gap-8 font-playfair font-bold">
+            <div className="flex items-center gap-8 font-title font-bold">
               {
                 <Highlight
                   element={
@@ -205,7 +205,7 @@ function Navbar({ isFooter }) {
               </g>
             </svg>
           </nav>
-          <div className="menu pointer-events-none absolute z-20 flex h-[6.25rem] w-[calc(100vw-1rem)] -translate-y-20 flex-col justify-center gap-3 bg-[#A4B9A0] p-4 font-playfair font-bold tracking-tight opacity-0 transition-all duration-500 sm:hidden">
+          <div className="menu pointer-events-none absolute z-20 flex h-[6.25rem] w-[calc(100vw-1rem)] -translate-y-20 flex-col justify-center gap-3 bg-[#A4B9A0] p-4 font-title font-bold tracking-tight opacity-0 transition-all duration-500 sm:hidden">
             <Link smooth to="/#work" aria-label="Scroll to the work section.">
               <div className="cursor-pointer hover:text-primary">my work</div>
             </Link>

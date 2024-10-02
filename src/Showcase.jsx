@@ -43,7 +43,7 @@ const Showcase = memo(function Showcase() {
           {/* Project title  */}
           <p
             data-aos="fade-up"
-            className=" pb-5 text-center font-playfair text-[2rem] font-extrabold leading-tight tracking-tighter sm:text-[4rem] sm:leading-tight xl:w-[46rem]"
+            className=" pb-5 text-center font-title text-[2rem] font-extrabold leading-tight tracking-tighter sm:text-[4rem] sm:leading-tight xl:w-[46rem]"
           >
             {project.title}
           </p>

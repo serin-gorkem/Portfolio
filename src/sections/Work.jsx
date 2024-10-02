@@ -199,7 +199,7 @@ function Work() {
                   {projectData[project.id].type}
                 </h1>
                 {/* Project title  */}
-                <p className="font-playfair text-[2rem] font-extrabold leading-tight tracking-tighter sm:text-6xl sm:leading-tight xl:w-[26rem]">
+                <p className="font-title text-[2rem] font-extrabold leading-tight tracking-tighter sm:text-6xl sm:leading-tight xl:w-[26rem]">
                   {projectData[project.id].title}
                 </p>
               </div>
@@ -219,8 +219,8 @@ function Work() {
                 {projectData[project.id].description}
               </p>
               <div className="relative h-[3.75rem] w-[9.625rem] border-2 border-highlight sm:h-[3.75rem] sm:w-[10.625rem]">
-                <Link to="/showcase" state={{ project }}>
-                  <button className="h-[3.75rem] w-[9.625rem] -translate-x-2 -translate-y-2 bg-highlight font-lato text-xs text-white transition-all duration-500 hover:translate-x-0 hover:translate-y-0 sm:h-[3.75rem] sm:w-[10.625rem] sm:text-base">
+                <Link to="/showcase" className="p-2" state={{ project } }>
+                  <button className="h-[3.75rem] w-[9.625rem]  -translate-x-4 hover:-translate-x-2 hover:-translate-y-[0.13rem] -translate-y-2 bg-highlight font-lato text-xs text-white transition-all duration-500 sm:h-[3.75rem] sm:w-[10.625rem] sm:text-base">
                     see this work
                   </button>
                 </Link>
@@ -239,7 +239,7 @@ function Work() {
                     className="hover w-full shadow-lg"
                     alt="hotel design landing page"
                   ></img>
-                  <p className="absolute -bottom-8 right-0 hidden translate-x-8 text-secondary opacity-0 transition-all duration-300 group-hover:translate-x-0 group-hover:opacity-100 xl:block">
+                  <p className="absolute -bottom-8 right-0 hidden translate-x-8 text-highlight opacity-0 transition-all duration-300 group-hover:translate-x-0 group-hover:opacity-100 xl:block">
                     See this project
                   </p>
                   <svg

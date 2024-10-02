@@ -11,13 +11,13 @@ function WhatIDo() {
     <article id="whatIDo" className="m-2 xl:m-4">
       <section className="max-container flex w-full text-text-white flex-col justify-between gap-8 p-4 sm:gap-16 sm:px-8 xl:flex-row xl:px-[6rem]">
         <div className="flex gap-1 sm:h-16 sm:gap-2" data-aos="fade-up">
-          <h1 className="font-playfair text-4xl font-extrabold tracking-tight  sm:text-6xl">
+          <h1 className="font-title text-4xl font-extrabold tracking-tight  sm:text-6xl">
             What
           </h1>
           {
             <Highlight
               element={
-                <h1 className="font-playfair text-4xl font-extrabold tracking-tight  sm:text-6xl">
+                <h1 className="font-title text-4xl font-extrabold tracking-tight  sm:text-6xl">
                   I do
                 </h1>
               }
@@ -26,7 +26,7 @@ function WhatIDo() {
         </div>
         <div className="flex flex-col gap-3 sm:gap-16 xl:gap-6">
           <div data-aos="fade-up">
-            <h1 className="pb-3 font-playfair text-xl font-bold sm:pb-6 sm:text-3xl">
+            <h1 className="pb-3 font-title text-xl font-bold sm:pb-6 sm:text-3xl">
               Design
             </h1>
             <p className="font-lato font-light leading-relaxed tracking-[%2] opacity-70 sm:w-[35rem] sm:text-xl sm:leading-relaxed">
@@ -37,7 +37,7 @@ function WhatIDo() {
             </p>
           </div>
           <div data-aos="fade-up">
-            <h1 className="pb-3 font-playfair text-xl font-bold sm:pb-6 sm:text-3xl">
+            <h1 className="pb-3 font-title text-xl font-bold sm:pb-6 sm:text-3xl">
               Development
             </h1>
             <p className="font-lato font-light leading-relaxed tracking-[%2] opacity-70 sm:w-[35rem] sm:text-xl sm:leading-relaxed">

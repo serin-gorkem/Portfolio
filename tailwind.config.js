@@ -9,12 +9,10 @@ export default {
         "secondary":"#1E3E62",
         "text-white": "#FFFFFF",
         "highlight":"#FF6500"
-        
       },
       fontFamily:{
-        "playfair":['Playfair Display', 'serif'],
+        "title":['Merriweather', 'serif'],
         "lato":['Lato', 'sans-serif'],
-        "logo":['Azeret Mono', 'Lato', 'sans-serif'],
       },
       screens:{
         "3xl":"1920px",
