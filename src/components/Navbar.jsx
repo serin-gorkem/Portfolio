@@ -85,7 +85,7 @@ function Navbar({ isFooter }) {
         </nav>
       ) : (
         <>
-          <nav className="max-container flex items-center justify-between px-4 pt-6 sm:px-8 sm:py-12 xl:px-[6rem]">
+          <nav className="max-container flex items-center text-text-white justify-between px-4 pt-6 sm:px-8 sm:py-12 xl:px-[6rem]">
             <Link smooth to="/#home">
               <img
                 className="w-24 cursor-pointer sm:w-36 3xl:w-52"

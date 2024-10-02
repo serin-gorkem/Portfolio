@@ -4,10 +4,14 @@
 
 
 body {
-    background-color: #ECECEC;
     color: #000000;
     overflow-x: hidden;
     scroll-behavior: smooth;
+}
+@layer base{
+    body{
+        @apply bg-primary
+    }
 }
 
 @keyframes load-animation {

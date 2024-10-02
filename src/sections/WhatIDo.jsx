@@ -9,15 +9,15 @@ AOS.init();
 function WhatIDo() {
   return (
     <article id="whatIDo" className="m-2 xl:m-4">
-      <section className="max-container flex w-full flex-col justify-between gap-8 p-4 sm:gap-16 sm:px-8 xl:flex-row xl:px-[6rem]">
+      <section className="max-container flex w-full text-text-white flex-col justify-between gap-8 p-4 sm:gap-16 sm:px-8 xl:flex-row xl:px-[6rem]">
         <div className="flex gap-1 sm:h-16 sm:gap-2" data-aos="fade-up">
-          <h1 className="font-playfair text-4xl font-extrabold tracking-tight text-secondary sm:text-6xl">
+          <h1 className="font-playfair text-4xl font-extrabold tracking-tight  sm:text-6xl">
             What
           </h1>
           {
             <Highlight
               element={
-                <h1 className="font-playfair text-4xl font-extrabold tracking-tight text-secondary sm:text-6xl">
+                <h1 className="font-playfair text-4xl font-extrabold tracking-tight  sm:text-6xl">
                   I do
                 </h1>
               }

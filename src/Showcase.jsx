@@ -29,14 +29,14 @@ const Showcase = memo(function Showcase() {
     <Suspense fallback={<h1>Loading...</h1>}>
       <article
         id="showcase"
-        className="m-2 h-[calc(100vh-1rem)] bg-primary xl:m-4 xl:h-[calc(100vh-2rem)] landscape:max-xl:h-[150vh]"
+        className="m-2 h-[calc(100vh-1rem)] bg-secondary text-text-white xl:m-4 xl:h-[calc(100vh-2rem)] landscape:max-xl:h-[150vh]"
       >
         <Navbar isFooter={false} />
         <main className="relative my-8 flex flex-col items-center justify-center px-2">
           {/* Project type */}
           <h1
             data-aos="fade-up"
-            className="mb-2  font-lato text-xs tracking-[0.2rem] text-black opacity-60 sm:px-1 sm:text-base"
+            className="mb-2  font-lato text-xs tracking-[0.2rem] opacity-60 sm:px-1 sm:text-base"
           >
             PROJECT SHOWCASE
           </h1>
@@ -55,10 +55,10 @@ const Showcase = memo(function Showcase() {
           </p>
           <div
             data-aos="fade-up"
-            className="relative mb-10 mt-8 h-[3.5rem] w-[9.625rem]  border-2 border-secondary sm:h-[3.75rem] sm:w-[10.625rem]"
+            className="relative mb-10 mt-8 h-[3.5rem] w-[9.625rem]  border-2 border-highlight sm:h-[3.75rem] sm:w-[10.625rem]"
           >
             {/* CTA Button with the animation logic of moving it on the x and y with transition */}
-            <button className="h-[3.5rem] w-[9.625rem] -translate-x-2 -translate-y-2 bg-secondary font-lato text-xs text-white transition-all duration-500 hover:translate-x-0 hover:translate-y-0 sm:h-[3.75rem] sm:w-[10.625rem] sm:text-base">
+            <button className="h-[3.5rem] w-[9.625rem] -translate-x-2 -translate-y-2 bg-highlight font-lato text-xs text-white transition-all duration-500 hover:translate-x-0 hover:translate-y-0 sm:h-[3.75rem] sm:w-[10.625rem] sm:text-base">
               <a href={project.link} aria-label="visit source" className="p-4">
                 {project.buttonText}
               </a>
@@ -103,7 +103,7 @@ const Showcase = memo(function Showcase() {
                 <path
                   id="Vector"
                   d="M15 11L12 8M12 8L9 11M12 8V16M21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21C16.9706 21 21 16.9706 21 12Z"
-                  stroke="#000000"
+                  stroke="#FF6500"
                   strokeWidth="2"
                   strokeLinecap="round"
                   strokeLinejoin="round"

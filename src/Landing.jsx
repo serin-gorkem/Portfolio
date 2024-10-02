@@ -26,7 +26,7 @@ const Landing = memo(function Landing() {
     window.scrollTo(0, 0);
   });
   return (
-    <Suspense fallback={<h1 className="flex justify-center items-center h-screen">Loading...</h1>} >
+    <Suspense fallback={<h1 className="flex justify-center text-text-white items-center h-screen">Loading...</h1>} >
       <Home />
       <PageIndicator page={1} />
       <Work />

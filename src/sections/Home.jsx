@@ -14,10 +14,10 @@ function Home() {
       {/* h-[calc(100vh-xrem)] xrem = 16 * x px which is the length of margin top + bottom to keep box centered. */}
       <article
         id="home"
-        className="m-2 h-[calc(100vh-1rem)] bg-primary xl:m-4 xl:h-[calc(100vh-2rem)] landscape:max-xl:h-fit"
+        className="m-2 h-[calc(100vh-1rem)] bg-secondary  xl:m-4 xl:h-[calc(100vh-2rem)] landscape:max-xl:h-fit"
       >
         <Navbar isFooter={false} />
-        <main className="max-container -z-10 flex h-[calc(100vh-10rem)] flex-col justify-center p-4 sm:h-[calc(100vh-14rem)] sm:px-8 xl:px-[6rem] landscape:max-xl:h-fit">
+        <main className="max-container text-text-white -z-10 flex h-[calc(100vh-10rem)] flex-col justify-center p-4 sm:h-[calc(100vh-14rem)] sm:px-8 xl:px-[6rem] landscape:max-xl:h-fit">
           <h1 data-aos="fade-up" className="font-playfair text-3xl font-extrabold leading-tight tracking-tighter sm:text-[3rem] sm:leading-tight 3xl:text-[5rem] 3xl:leading-tight">
             Hi, I&#39;m Gorkem,
           </h1>
@@ -59,15 +59,15 @@ function Home() {
               />
             }
           </div>
-          <h2 data-aos="fade-up" className=" py-8 font-lato text-[0.875rem] font-light leading-[150%] tracking-[2%] text-black opacity-70 sm:w-[40rem] sm:text-xl sm:leading-[150%] 3xl:w-[56.25rem] 3xl:text-2xl">
+          <h2 data-aos="fade-up" className=" py-8 font-lato text-[0.875rem] font-light leading-[150%] tracking-[2%] m:w-[40rem] sm:text-xl sm:leading-[150%] 3xl:w-[56.25rem] 3xl:text-2xl">
             I design and build beautiful websites for businesses around the
             globe. If you need a modern and powerful website, send me an email.
             If we are a good fit, I will give you a time and cost estimate.
           </h2>
-          <div data-aos="fade-up" className="relative h-[3.5rem] w-[9.625rem]  border-2 border-secondary sm:h-[3.75rem] sm:w-[10.625rem]">
+          <div data-aos="fade-up" className="relative h-[3.5rem] w-[9.625rem]  border-2 border-highlight sm:h-[3.75rem] sm:w-[10.625rem]">
             {/* CTA Button with the animation logic of moving it on the x and y with transition */}
             <Link smooth to="#work" className="p-4">
-              <button className="h-[3.5rem] w-[9.625rem] -translate-x-8 -translate-y-2 bg-secondary font-lato text-xs text-white transition-all duration-500 hover:-translate-x-4 hover:translate-y-0 sm:h-[3.75rem] sm:w-[10.625rem] sm:text-base">
+              <button className="h-[3.5rem] w-[9.625rem] -translate-x-8 -translate-y-2 bg-highlight font-lato text-xs text-white transition-all duration-500 hover:-translate-x-4 hover:translate-y-0 sm:h-[3.75rem] sm:w-[10.625rem] sm:text-base">
                 see my work
               </button>
             </Link>
@@ -88,8 +88,8 @@ function Home() {
        */}
         <div className="max-container pointer-events-none relative bottom-12 z-10 hidden justify-end sm:flex sm:px-8 xl:px-[6rem]">
           <div className="relative w-12 overflow-hidden">
-            <div className="h-40 w-0.5 animate-scroll-arrow bg-secondary sm:block"></div>
-            <p className="absolute -right-5 top-[1.3rem] rotate-90 font-lato font-medium">
+            <div className="h-40 w-0.5 animate-scroll-arrow bg-highlight  sm:block"></div>
+            <p className="absolute -right-5 text-highlight top-[1.3rem] rotate-90 font-lato font-medium">
               SCROLL
             </p>
           </div>

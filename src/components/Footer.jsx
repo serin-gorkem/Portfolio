@@ -9,7 +9,7 @@ AOS.init();
  */
 function Footer() {
   return (
-    <footer data-aos="fade-up" id="footer" className="m-2 bg-primary xl:m-4">
+    <footer data-aos="fade-up" id="footer" className="m-2 bg-secondary text-text-white xl:m-4">
       <section className="max-container relative w-full p-4 py-8 sm:px-8 sm:py-16 xl:px-[6rem]">
         <div className="mb-4 flex gap-1 sm:h-12 sm:gap-1 xl:mb-8">
           <h1 className="font-playfair text-3xl font-extrabold tracking-tighter sm:pb-10 sm:text-5xl xl:pb-8">
@@ -75,23 +75,23 @@ function Footer() {
                   height="132"
                   x="30"
                   y="30"
-                  stroke="#000000"
+                  stroke="#ffffff"
                   strokeWidth="12"
                   rx="16"
                 />
 
                 <path
-                  stroke="#000000"
+                  stroke="#ffffff"
                   strokeLinecap="round"
                   strokeLinejoin="round"
                   strokeWidth="12"
                   d="M66 86v44"
                 />
 
-                <circle cx="66" cy="64" r="8" fill="#000000" />
+                <circle cx="66" cy="64" r="8" fill="#ffffff" />
 
                 <path
-                  stroke="#000000"
+                  stroke="#ffffff"
                   strokeLinecap="round"
                   strokeWidth="12"
                   d="M126 130v-26c0-9.941-8.059-18-18-18v0c-9.941 0-18 8.059-18 18v26"
@@ -121,7 +121,7 @@ function Footer() {
 
               <g id="SVGRepo_iconCarrier">
                 <path
-                  stroke="#000000"
+                  stroke="#ffffff"
                   strokeLinecap="round"
                   strokeLinejoin="round"
                   strokeWidth="12"
@@ -152,7 +152,7 @@ function Footer() {
 
               <g id="SVGRepo_iconCarrier">
                 <path
-                  stroke="#000000"
+                  stroke="#ffffff"
                   strokeWidth="12"
                   d="M96 162c-14.152 0-24.336-.007-32.276-.777-7.849-.761-12.87-2.223-16.877-4.741a36 36 0 0 1-11.33-11.329c-2.517-4.007-3.98-9.028-4.74-16.877C30.007 120.336 30 110.152 30 96c0-14.152.007-24.336.777-32.276.76-7.849 2.223-12.87 4.74-16.877a36 36 0 0 1 11.33-11.33c4.007-2.517 9.028-3.98 16.877-4.74C71.663 30.007 81.847 30 96 30c14.152 0 24.336.007 32.276.777 7.849.76 12.87 2.223 16.877 4.74a36 36 0 0 1 11.329 11.33c2.518 4.007 3.98 9.028 4.741 16.877.77 7.94.777 18.124.777 32.276 0 14.152-.007 24.336-.777 32.276-.761 7.849-2.223 12.87-4.741 16.877a36 36 0 0 1-11.329 11.329c-4.007 2.518-9.028 3.98-16.877 4.741-7.94.77-18.124.777-32.276.777Z"
                 />
@@ -161,11 +161,11 @@ function Footer() {
                   cx="96"
                   cy="96"
                   r="30"
-                  stroke="#000000"
+                  stroke="#ffffff"
                   strokeWidth="12"
                 />
 
-                <circle cx="135" cy="57" r="9" fill="#000000" />
+                <circle cx="135" cy="57" r="9" fill="#ffffff" />
               </g>
             </svg>
           </a>
@@ -189,7 +189,7 @@ function Footer() {
 
               <g id="SVGRepo_iconCarrier">
                 <path
-                  stroke="#000000"
+                  stroke="#ffffff"
                   strokeLinecap="round"
                   strokeLinejoin="round"
                   strokeWidth="12"

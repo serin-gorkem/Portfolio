@@ -5,9 +5,10 @@ export default {
   theme: {
     extend: {
       colors:{
-        "primary":"#CCE5D7",
-        "secondary":"#3C4510",
-        "highlight":"#E3FFEF"
+        "primary":"#0B192C",
+        "secondary":"#1E3E62",
+        "text-white": "#FFFFFF",
+        "highlight":"#FF6500"
         
       },
       fontFamily:{
