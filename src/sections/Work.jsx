@@ -96,11 +96,13 @@ const Work = memo(function Work() {
                   </p>
                   <img
                     src="./Dots.svg"
+                    alt="dots images"
                     className="absolute -bottom-6 -left-7 -z-10 aspect-square w-32 sm:hidden xl:block"
                   ></img>
                 </div>
                 <img
                   src="./Dots.svg"
+                  alt="dots images"
                   className="absolute -bottom-6 -left-7 -z-10 aspect-square w-32 sm:hidden xl:block"
                 ></img>
               </Link>

@@ -22,7 +22,7 @@ function Home() {
             <div
               data-aos="slide-down"
               data-aos-duration="1500"
-              className="flex items-center w-full justify-evenly gap-8 px-2 sm:px-8 xl:flex-col xl:px-0"
+              className="flex w-full items-center justify-evenly gap-8 px-2 sm:px-8 xl:flex-col xl:px-0"
             >
               <a
                 href="https://www.linkedin.com/in/gorkem-serin-097606227/"
@@ -61,13 +61,12 @@ function Home() {
           </div>
           <h1
             data-aos="fade-up"
-            data-aos-duration="800"
             className="font-title text-3xl font-medium leading-tight tracking-tighter xs:text-4xl xs:leading-tight sm:text-[3rem] sm:leading-tight 3xl:text-[5rem] 3xl:leading-tight"
           >
             Hi, I&#39;m Gorkem,
           </h1>
           {/* Highlight is a component which adds custom highlights to selected texts. */}
-          <div data-aos="fade-up" data-aos-duration="800">
+          <div data-aos="fade-up">
             {
               <Highlight
                 element={
@@ -78,7 +77,7 @@ function Home() {
               />
             }
           </div>
-          <div data-aos="fade-up" data-aos-duration="1200">
+          <div data-aos="fade-up">
             {
               <Highlight
                 element={
@@ -90,11 +89,7 @@ function Home() {
             }
           </div>
           {/* This two is wrapped with a div because I wanted them to be one line. */}
-          <div
-            data-aos="fade-up"
-            data-aos-duration="1500"
-            className="gap-1 sm:flex sm:gap-2"
-          >
+          <div data-aos="fade-up" className="gap-1 sm:flex sm:gap-2">
             <h1 className="font-title text-3xl font-medium leading-tight tracking-tighter xs:text-4xl xs:leading-tight sm:text-[3rem] sm:leading-tight 3xl:text-[5rem] 3xl:leading-tight">
               and
             </h1>
@@ -110,7 +105,6 @@ function Home() {
           </div>
           <h2
             data-aos="fade-up"
-            data-aos-duration="1000"
             className="py-8 font-lato text-[0.875rem] font-light leading-[150%] tracking-[2%] sm:w-[40rem] sm:text-xl sm:leading-[150%] 3xl:w-[56.25rem] 3xl:text-2xl"
           >
             I design and build beautiful websites for businesses around the
@@ -120,27 +114,25 @@ function Home() {
           <div className="flex gap-8">
             <div
               data-aos="fade-up"
-              data-aos-duration="1000"
-              className="relative h-[3.5rem] w-[9.625rem] border-2 border-highlight sm:h-[3.75rem] sm:w-[10.625rem]"
+              className="relative h-[3.5rem] w-[9.625rem] border-2 border-primary hover:border-highlight sm:h-[3.75rem] sm:w-[10.625rem]"
             >
               {/* CTA Button with the animation logic of moving it on the x and y with transition */}
               <Link smooth to="#work" className="p-2">
-                <button className="h-[3.5rem] w-[9.625rem] -translate-x-4 -translate-y-2 bg-highlight font-lato text-sm font-bold text-white transition-all duration-500 hover:-translate-x-[0.6rem] hover:-translate-y-[0.13rem] sm:h-[3.75rem] sm:w-[10.625rem] sm:text-base">
+                <button className="h-[3.5rem] w-[9.625rem] -translate-x-4 -translate-y-2 bg-primary font-lato text-sm font-bold text-white transition-all duration-500 hover:-translate-x-[0.6rem] hover:-translate-y-[0.13rem] hover:bg-highlight sm:h-[3.75rem] sm:w-[10.625rem] sm:text-base">
                   see my work
                 </button>
               </Link>
             </div>
             <div
               data-aos="fade-up"
-              data-aos-duration="1000"
-              className="relative h-[3.5rem] w-[6.625rem] border-2 border-highlight sm:h-[3.75rem] sm:w-[5.625rem]"
+              className="relative h-[3.5rem] w-[6.625rem] border-2 border-primary hover:border-highlight sm:h-[3.75rem] sm:w-[5.625rem]"
             >
               {/* CTA Button with the animation logic of moving it on the x and y with transition */}
               <a
                 className="p-2"
                 href="https://drive.google.com/file/d/17aUD53d-_kGrmTcAGbSIzq8bEhIZbXL9/view?usp=sharing"
               >
-                <button className="h-[3.5rem] w-[6.625rem] -translate-x-4 -translate-y-2 bg-highlight font-lato text-sm font-bold text-white transition-all duration-500 hover:-translate-x-[0.6rem] hover:-translate-y-[0.13rem] sm:h-[3.75rem] sm:w-[5.625rem] sm:text-base">
+                <button className="h-[3.5rem] w-[6.625rem] -translate-x-4 -translate-y-2 bg-primary font-lato text-sm font-bold text-white transition-all duration-500 hover:-translate-x-[0.6rem] hover:-translate-y-[0.13rem] hover:bg-highlight sm:h-[3.75rem] sm:w-[5.625rem] sm:text-base">
                   cv
                 </button>
               </a>
@@ -160,12 +152,8 @@ function Home() {
       }
       The second div has overflow: hidden to make it look like it disappears.
        */}
-        <div className="max-container pointer-events-none relative bottom-12 3xl:bottom-24 z-10 hidden justify-end sm:flex sm:px-8 xl:px-[6rem]">
-          <div
-            data-aos="slide-down"
-            data-aos-duration="1000"
-            className="relative w-12 overflow-hidden"
-          >
+        <div className="max-container pointer-events-none relative bottom-12 z-10 hidden justify-end sm:flex sm:px-8 xl:px-[6rem] 3xl:bottom-24">
+          <div data-aos="slide-down" className="relative w-12 overflow-hidden">
             <div className="h-40 w-0.5 animate-scroll-arrow bg-highlight sm:block"></div>
             <p className="absolute -right-4 top-[1.3rem] rotate-90 font-lato font-medium text-highlight">
               SCROLL

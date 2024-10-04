@@ -34,81 +34,96 @@ function TechList({ isFrontend }) {
   const frontend = [
     {
       src: "./svg/html-min.svg",
-      alt: "HTML",
+      text: "HTML",
+      alt:"Html logo"
     },
     {
       src: "./svg/css-min.svg",
-      alt: "CSS",
+      text: "CSS",
+      alt: "CSS logo",
     },
     {
       src: "./svg/js-min.svg",
-      alt: "JS",
+      text: "JS",
+      alt: "JS logo",
     },
     {
       src: "./svg/jquery-min.svg",
-      alt: "JQUERY",
+      text: "JQUERY",
+      alt: "JQUERY logo",
     },
     {
       src: "./svg/sass-min.svg",
-      alt: "SASS",
+      text: "SASS",
+      alt: "SASS logo",
     },
     {
       src: "./svg/tailwind-min.svg",
-      alt: "TAILWIND",
+      text: "TAILWIND",
+      alt: "TAILWIND logo",
     },
     {
       src: "./svg/reactjs-min.svg",
-      alt: "REACTJS",
+      text: "REACTJS",
+      alt: "REACTJS logo",
     },
     {
       src: "./svg/figma-min.svg",
-      alt: "FIGMA",
+      text: "FIGMA",
+      alt: "FIGMA logo",
     },
   ];
   const backend = [
     {
       src: "./svg/ejs-min.svg",
-      alt: "EJS",
+      text: "EJS",
+      alt: "EJS logo",
     },
     {
       src: "./svg/express-min.svg",
-      alt: "Express",
+      text: "Express",
+      alt: "Express logo",
     },
     {
       src: "./svg/git-min.svg",
-      alt: "GIT",
+      text: "GIT",
+      alt: "GIT logo",
     },
     {
       src: "./svg/node-min.svg",
-      alt: "NODEJS",
+      text: "NODEJS",
+      alt: "NODEJS logo",
     },
     {
       src: "./svg/pgsql-min.svg",
-      alt: "PosgreSQL",
+      text: "PostgreSQL",
+      alt: "PostgreSQL logo",
     },
     {
       src: "./svg/api-min.svg",
-      alt: "API",
+      text: "API",
+      alt: "API logo",
     },
     {
       src: "./svg/axios-min.svg",
-      alt: "AXIOS",
+      text: "AXIOS",
+      alt: "AXIOS logo",
     },
   ];
   return isFrontend
-    ? frontend.map(({ src, alt }) => (
-        <li key={alt} className="flex group hover:-translate-y-1/2transition-transform  transition-all duration-500 hover:-translate-y-3 flex-col items-center justify-center">
+    ? frontend.map(({ src, text,alt }) => (
+        <li key={text} className="flex group hover:-translate-y-1/2transition-transform  transition-all duration-500 hover:-translate-y-3 flex-col items-center justify-center">
           <img
             src={src}
             alt={alt}
           />
-          <p className="group-hover:opacity-100 transition-opacity opacity-0">{alt}</p>
+          <p className="group-hover:opacity-100 transition-opacity opacity-0">{text}</p>
         </li>
       ))
-    : backend.map(({ src, alt }) => (
-        <li key={alt} className="flex group hover:-translate-y-1/2transition-transform  transition-all duration-500 hover:-translate-y-3 flex-col items-center justify-center">
+    : backend.map(({ src, text,alt }) => (
+        <li key={text} className="flex group hover:-translate-y-1/2transition-transform  transition-all duration-500 hover:-translate-y-3 flex-col items-center justify-center">
           <img src={src} alt={alt} />
-          <p className="group-hover:opacity-100 transition-opacity opacity-0">{alt}</p>
+          <p className="group-hover:opacity-100 transition-opacity opacity-0">{text}</p>
         </li>
       ));
 }
