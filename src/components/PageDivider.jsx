@@ -7,7 +7,7 @@ AOS.init();
 
 function PageDivider({ title, titleHighlight, page }) {
   return (
-    <section  className="max-container relative p-4 sm:px-8 sm:pt-16 xl:px-[6rem] xl:pt-32" data-aos="fade-up">
+    <section  className="max-container relative p-4 sm:px-8 xl:px-[6rem]" data-aos="fade-up">
       <div className="flex justify-between py-4">
         <div className="flex gap-2">
           <h1 className="font-title text-3xl text-text-white sm:text-5xl">

@@ -5,17 +5,14 @@ AOS.init();
 
 function TechStack() {
   return (
-    <article id="tech" className="m-2 pb-8 xl:m-4 landscape:max-xl:h-fit sm:h-[calc(100vh-10rem)]">
+    <article id="tech" className="m-2 pb-8 xl:m-4 landscape:max-xl:h-fit">
       <PageDivider title="Tech" titleHighlight="stack" page="02" />
       <section className="max-container my-8 flex flex-col justify-between gap-16 px-4 text-text-white sm:px-8 xl:flex-row xl:items-center xl:px-[6rem]">
         <div>
           <h1 data-aos="fade-up" className="font-title text-2xl">
             Frontend & Design
           </h1>
-          <ul
-            data-aos="fade-up"
-            className="flex flex-wrap justify-between gap-2 pt-6"
-          >
+          <ul data-aos="fade-up" className="flex flex-wrap gap-4 pt-6">
             {<TechList isFrontend={true} />}
           </ul>
         </div>
@@ -23,10 +20,7 @@ function TechStack() {
           <h1 data-aos="fade-up" className="font-title text-2xl">
             Backend && Version Control && Databases
           </h1>
-          <ul
-            data-aos="fade-up"
-            className="flex flex-wrap justify-between gap-2 pt-6"
-          >
+          <ul data-aos="fade-up" className="flex flex-wrap gap-4 pt-6">
             {<TechList isFrontend={false} />}
           </ul>
         </div>
@@ -103,13 +97,18 @@ function TechList({ isFrontend }) {
   ];
   return isFrontend
     ? frontend.map(({ src, alt }) => (
-        <li key={alt}>
-          <img src={src} alt={alt} />
+        <li key={alt} className="flex group hover:-translate-y-1/2transition-transform  transition-all duration-500 hover:-translate-y-3 flex-col items-center justify-center">
+          <img
+            src={src}
+            alt={alt}
+          />
+          <p className="group-hover:opacity-100 transition-opacity opacity-0">{alt}</p>
         </li>
       ))
     : backend.map(({ src, alt }) => (
-        <li key={alt}>
+        <li key={alt} className="flex group hover:-translate-y-1/2transition-transform  transition-all duration-500 hover:-translate-y-3 flex-col items-center justify-center">
           <img src={src} alt={alt} />
+          <p className="group-hover:opacity-100 transition-opacity opacity-0">{alt}</p>
         </li>
       ));
 }

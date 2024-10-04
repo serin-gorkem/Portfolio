@@ -81,7 +81,6 @@ function Navbar({ isFooter }) {
               />
             }
           </div>
-          {/* source:"https://www.svgrepo.com/svg/511004/hamburger-md"*/}
         </nav>
       ) : (
         <>
@@ -142,83 +141,11 @@ function Navbar({ isFooter }) {
                 />
               }
             </div>
-            {/* source:"https://www.svgrepo.com/svg/511004/hamburger-md"*/}
-            <svg
-              className="h-14 w-14 cursor-pointer sm:hidden"
-              onClick={openMenu}
-              viewBox="-2.16 -2.16 28.32 28.32"
-              version="1.1"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="#000000"
-            >
-              <g id="SVGRepo_bgCarrier" strokeWidth="0" />
-
-              <g
-                id="SVGRepo_tracerCarrier"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-
-              <g id="SVGRepo_iconCarrier">
-                {" "}
-                <title>Menu</title>{" "}
-                <g
-                  id="Page-1"
-                  strokeWidth="2.112"
-                  fill="none"
-                  fillRule="evenodd"
-                >
-                  {" "}
-                  <g id="Menu">
-                    {" "}
-                    <rect
-                      id="Rectangle"
-                      fillRule="nonzero"
-                      x="0"
-                      y="0"
-                      width="24"
-                      height="24"
-                    >
-                      {" "}
-                    </rect>{" "}
-                    <line
-                      x1="5"
-                      y1="7"
-                      x2="19"
-                      y2="7"
-                      id="Path"
-                      stroke="#FF6500"
-                      strokeWidth="2.112"
-                      strokeLinecap="round"
-                    >
-                      {" "}
-                    </line>{" "}
-                    <line
-                      x1="5"
-                      y1="17"
-                      x2="19"
-                      y2="17"
-                      id="Path"
-                      stroke="#FF6500"
-                      strokeWidth="2.112"
-                      strokeLinecap="round"
-                    >
-                      {" "}
-                    </line>{" "}
-                    <line
-                      x1="5"
-                      y1="12"
-                      x2="19"
-                      y2="12"
-                      id="Path"
-                      stroke="#FF6500"
-                      strokeWidth="2.112"
-                      strokeLinecap="round"
-                    ></line>
-                  </g>
-                </g>
-              </g>
-            </svg>
+            <div className="h-8 flex group flex-col cursor-pointer relative z-10 sm:hidden" onClick={openMenu}>
+              <hr className="w-9 h-full border-highlight border-t-4"></hr>
+              <hr className="w-9 h-full border-highlight border-t-4"></hr>
+              <hr className="w-9 h-full border-highlight border-t-4"></hr>
+            </div>
           </nav>
           <div className="menu pointer-events-none absolute z-20 flex h-[8.25rem] w-[calc(100vw-1rem)] -translate-y-20 flex-col justify-center gap-3 text-text-white bg-primary p-4 font-title font-bold tracking-tight opacity-0 transition-all duration-500 sm:hidden">
             <Link smooth to="/#work" aria-label="Scroll to the work section.">

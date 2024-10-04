@@ -7,9 +7,10 @@ AOS.init();
  */
 function WhatIDo() {
   return (
-    <article id="whatIDo" className="m-2 pb-8 xl:m-4 sm:h-[calc(100vh-10rem)]">
+    <article id="whatIDo" className="m-2 xl:m-4 py-8">
       <PageDivider title="What" titleHighlight="I do" page="03" />
-      <section className="max-container flex w-full text-text-white flex-col justify-between gap-8 p-4 sm:gap-16  sm:p-8 xl:flex-row xl:px-[6rem]">
+      <section className="max-container flex w-full text-text-white relative flex-col justify-between gap-8 p-4 sm:gap-16  sm:p-8 xl:flex-row xl:px-[6rem]">
+      <div className=" bg-secondary h-64 -z-10 sm:left-96 bottom-0 left-20 absolute w-full"></div>
         <div className="flex flex-col justify-between w-full gap-12 xl:flex-row">
           <div data-aos="fade-up">
             <h1 className="pb-3 font-title text-xl font-bold sm:pb-6 sm:text-3xl">
