@@ -1,13 +1,16 @@
 import { lazy } from "react";
 const PropTypes = lazy(() => import("prop-types"));
 const Highlight = lazy(() => import("./Highlight"));
-import "aos/dist/aos.css";
-import AOS from "aos";
-AOS.init();
+const ImportAos = lazy(() => import("../components/ImportAos"));
 
 function PageDivider({ title, titleHighlight, page }) {
   return (
-    <section  className="max-container relative p-4 sm:px-8 xl:px-[6rem]" data-aos="fade-up">
+    <section
+      className="max-container relative p-4 sm:px-8 xl:px-[6rem]"
+      data-aos="fade-up"
+    >
+      {/* Import AOS for animations */}
+      <ImportAos />
       <div className="flex justify-between py-4">
         <div className="flex gap-2">
           <h1 className="font-title text-3xl text-text-white sm:text-5xl">

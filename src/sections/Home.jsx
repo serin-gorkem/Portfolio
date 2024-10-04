@@ -2,13 +2,32 @@ import { lazy } from "react";
 import { HashLink as Link } from "react-router-hash-link";
 const Navbar = lazy(() => import("../components/Navbar"));
 const Highlight = lazy(() => import("../components/Highlight"));
-import "aos/dist/aos.css";
-import AOS from "aos";
-AOS.init();
+const ImportAos = lazy(() => import("../components/ImportAos"));
 /**
  * @description The Home component is the main page of the website, showcasing the developer's skills and services.
  */
 function Home() {
+  const socialLinks = [
+    {
+      href: "https://www.linkedin.com/in/gorkem-serin-097606227/",
+      alt: "LinkedIn Logo",
+      label: "Linkedin",
+      src: "./svg/linkedin.svg",
+    },
+    {
+      href: "https://github.com/serin-gorkem",
+      alt: "Github Logo",
+      label: "Github",
+      src: "./svg/github.svg",
+    },
+    {
+      href: "https://www.instagram.com/gorkemseriin/",
+      alt: "Instagram Logo",
+      label: "Instagram",
+      src: "./svg/instagram.svg",
+    },
+  ];
+
   return (
     <>
       {/* h-[calc(100vh-xrem)] xrem = 16 * x px which is the length of margin top + bottom to keep box centered. */}
@@ -16,6 +35,8 @@ function Home() {
         id="home"
         className="relative m-2 h-[calc(100vh-1rem)] bg-secondary xl:m-4 xl:h-[calc(100vh-2rem)] landscape:max-xl:h-fit"
       >
+        {/* Import AOS for animations */}
+        <ImportAos />
         <Navbar isFooter={false} />
         <main className="max-container relative flex h-[calc(100vh-10rem)] flex-col justify-center p-4 text-text-white sm:h-[calc(100vh-14rem)] sm:px-8 xl:px-[6rem] landscape:max-xl:h-fit">
           <div className="absolute -bottom-10 right-0 flex h-24 w-full bg-primary sm:bottom-0 sm:items-center xl:-bottom-20 xl:right-20 xl:h-screen xl:w-24 xl:justify-center">
@@ -24,39 +45,16 @@ function Home() {
               data-aos-duration="1500"
               className="flex w-full items-center justify-evenly gap-8 px-2 sm:px-8 xl:flex-col xl:px-0"
             >
-              <a
-                href="https://www.linkedin.com/in/gorkem-serin-097606227/"
-                aria-label="Linkedin"
-                className="transition-all duration-500 hover:-translate-y-3"
-              >
-                <img
-                  src="./svg/linkedin.svg"
-                  alt="linkedin logo"
-                  className="w-10"
-                ></img>
-              </a>
-              <a
-                href="https://github.com/serin-gorkem"
-                aria-label="Github"
-                className="transition-all duration-500 hover:-translate-y-3"
-              >
-                <img
-                  src="./svg/github.svg"
-                  alt="linkedin logo"
-                  className="w-10"
-                ></img>
-              </a>
-              <a
-                href="https://www.instagram.com/gorkemseriin/"
-                aria-label="Instagram"
-                className="transition-all duration-500 hover:-translate-y-3"
-              >
-                <img
-                  src="./svg/instagram.svg"
-                  alt="linkedin logo"
-                  className="w-10"
-                ></img>
-              </a>
+              {socialLinks.map(({ href, label, src }) => (
+                <a
+                  key={label}
+                  href={href}
+                  aria-label={label}
+                  className="transition-all duration-500 hover:-translate-y-3"
+                >
+                  <img src={src} alt={`${label} logo`} className="w-10" />
+                </a>
+              ))}
             </div>
           </div>
           <h1

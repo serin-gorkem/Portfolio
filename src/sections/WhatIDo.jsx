@@ -1,17 +1,17 @@
-import "aos/dist/aos.css";
-import AOS from "aos";
+import { lazy } from "react";
 import PageDivider from "../components/PageDivider";
-AOS.init();
+const ImportAos = lazy(() => import("../components/ImportAos"));
 /**
  * @description The WhatIDo component describes the developer's skills and services.
  */
 function WhatIDo() {
   return (
-    <article id="whatIDo" className="m-2 xl:m-4 py-8">
+    <article id="whatIDo" className="m-2 py-8 xl:m-4">
+      {/* Import AOS for animations */}
+      <ImportAos />
       <PageDivider title="What" titleHighlight="I do" page="03" />
-      <section className="max-container flex w-full text-text-white relative flex-col justify-between gap-8 p-4 sm:gap-16  sm:p-8 xl:flex-row xl:px-[6rem]">
-      <div className=" bg-secondary h-64 -z-10 sm:left-96 bottom-0 left-20 absolute w-full"></div>
-        <div className="flex flex-col justify-between w-full gap-12 xl:flex-row">
+      <section className="max-container relative flex w-full flex-col justify-between gap-8 p-4 text-text-white sm:gap-16 sm:p-8 xl:flex-row xl:px-[6rem]">
+        <div className="flex w-full flex-col justify-between gap-12 xl:flex-row">
           <div data-aos="fade-up">
             <h1 className="pb-3 font-title text-xl font-bold sm:pb-6 sm:text-3xl">
               Design
@@ -40,4 +40,3 @@ function WhatIDo() {
   );
 }
 export default WhatIDo;
-

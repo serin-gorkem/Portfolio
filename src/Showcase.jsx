@@ -3,9 +3,8 @@ import { useLocation } from "react-router-dom";
 import { useEffect } from "react";
 const Navbar = lazy(() => import("./components/Navbar"));
 const Footer = lazy(() => import("./components/Footer"));
-import "aos/dist/aos.css";
-import AOS from "aos";
-AOS.init();
+const ImportAos = lazy(() => import("./components/ImportAos"));
+
 /**
  * @description The Showcase component displays a project's details and image.
  * @param {Object} props - The props object contains the project data.
@@ -15,9 +14,10 @@ const Showcase = memo(function Showcase() {
   const location = useLocation();
   const { project } = location.state;
 
+
   useEffect(() => {
     window.scrollTo(0, 0);
-  });
+  },[]);
     /**
    * @description The goBackTop function scrolls the window to the top.
    */
@@ -27,6 +27,7 @@ const Showcase = memo(function Showcase() {
 
   return (
     <Suspense fallback={<h1>Loading...</h1>}>
+      <ImportAos/>
       <article
         id="showcase"
         className="m-2 h-[calc(100vh-1rem)] bg-secondary text-text-white xl:m-4 xl:h-[calc(100vh-2rem)] landscape:max-xl:h-[150vh]"
@@ -55,10 +56,10 @@ const Showcase = memo(function Showcase() {
           </p>
           <div
             data-aos="fade-up"
-            className="relative mb-10 mt-8 h-[3.5rem] w-[9.625rem]  border-2 border-highlight sm:h-[3.75rem] sm:w-[10.625rem]"
+            className="relative mb-10 mt-8 h-[3.5rem] w-[9.625rem]  border-2 border-primary hover:border-highlight sm:h-[3.75rem] sm:w-[10.625rem]"
           >
             {/* CTA Button with the animation logic of moving it on the x and y with transition */}
-            <button className="h-[3.5rem] w-[9.625rem] -translate-x-2 -translate-y-2 bg-highlight font-lato text-xs text-white transition-all duration-500 hover:translate-x-0 hover:translate-y-0 sm:h-[3.75rem] sm:w-[10.625rem] sm:text-base">
+            <button className="h-[3.5rem] w-[9.625rem] -translate-x-2 -translate-y-2 hover:bg-highlight bg-primary  font-lato text-xs text-white transition-all duration-500 hover:translate-x-0 hover:translate-y-0 sm:h-[3.75rem] sm:w-[10.625rem] sm:text-base">
               <a href={project.link} aria-label="visit source" className="p-4">
                 {project.buttonText}
               </a>
