@@ -21,6 +21,26 @@
     },
     {
       "id": "1",
+      "title": "Chat Clone Website Design",
+      "type": "WEB DESIGN WORK",
+      "specs": [
+        "Mobile-first design",
+        "Responsiveness and adaptability",
+        "User-friendly interface",
+        "Cross-browser compatibility",
+        "Accessibility",
+        "Figma"
+      ],
+      "description": "This is a homepage design and build for a concept project - a chat application. I designed the page and plan to built it on Webflow in the future.",
+      "showcaseDescription": "This is a homepage design and build for a concept project - a chat application. I designed the page and plan to built it on Webflow in the future.",
+      "link": "https://www.figma.com/design/NeWDS6LTqcEWSByApMAOBP/Practice%3A-Chat-App-Homepage-Design-(Copy)?node-id=107-2&t=l9sJWatKgJ3lOTdr-1",
+      "buttonText": "visit figma file",
+      "image": "./img/Chat.webp",
+      "alt": "Chat website app design.",
+      "showcaseImage": "./img/Chat-Showcase.webp"
+    },
+    {
+      "id": "2",
       "title": "Weather Pulse Website",
       "type": "WEB DEVELOPMENT",
       "specs": [
@@ -44,7 +64,7 @@
       "showcaseImage": "./img/WeatherPulse-Showcase.webp"
     },
     {
-      "id": "2",
+      "id": "3",
       "title": "Acme Website",
       "type": "WEB DEVELOPMENT",
       "specs": [
@@ -64,7 +84,7 @@
       "showcaseImage": "./img/Acme-Showcase.webp"
     },
     {
-      "id": "3",
+      "id": "4",
       "title": "Nike Clone Website",
       "type": "WEB DEVELOPMENT",
       "specs": [
@@ -83,26 +103,6 @@
       "image": "./img/Nike.webp",
       "alt": "Nike clone website.",
       "showcaseImage": "./img/Nike-Showcase.webp"
-    },
-    {
-      "id": "4",
-      "title": "Chat Clone Website Design",
-      "type": "WEB DESIGN WORK",
-      "specs": [
-        "Mobile-first design",
-        "Responsiveness and adaptability",
-        "User-friendly interface",
-        "Cross-browser compatibility",
-        "Accessibility",
-        "Figma"
-      ],
-      "description": "This is a homepage design and build for a concept project - a chat application. I designed the page and plan to built it on Webflow in the future.",
-      "showcaseDescription": "This is a homepage design and build for a concept project - a chat application. I designed the page and plan to built it on Webflow in the future.",
-      "link": "https://www.figma.com/design/NeWDS6LTqcEWSByApMAOBP/Practice%3A-Chat-App-Homepage-Design-(Copy)?node-id=107-2&t=l9sJWatKgJ3lOTdr-1",
-      "buttonText": "visit figma file",
-      "image": "./img/Chat.webp",
-      "alt": "Chat website app design.",
-      "showcaseImage": "./img/Chat-Showcase.webp"
     },
     {
       "id": "5",
@@ -128,6 +128,24 @@
     },
     {
       "id": "6",
+      "title": "Typescript List Tech Project",
+      "type": "WEB DEVELOPMENT",
+      "specs": [
+        "Typescript",
+        "Tech",
+        "Responsiveness and adaptability",
+        "Clean code practices"
+      ],
+      "description": "Typescript List is a web app built using TypeScript, demonstrating efficient data handling and strong typing. The project features a simple, responsive design with a focus on functionality and maintainability.",
+      "showcaseDescription": "Typescript List showcases the power of TypeScript for building scalable web applications. It emphasizes clean code, strict type checking, and an intuitive interface, offering users the ability to filter and manage lists with ease.",
+      "link": "https://serin-gorkem.github.io/typescript-list/",
+      "buttonText": "visit live site",
+      "image": "./img/typescript-list.webp",
+      "alt": "Typescript list project interface",
+      "showcaseImage": "./img/typescript-list.webp"
+    },
+    {
+      "id": "7",
       "title": "KusadasiVipTaxi Website",
       "type": "WEB DEVELOPMENT",
       "specs": [
