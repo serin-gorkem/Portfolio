@@ -143,6 +143,26 @@
       "image": "./img/typescript-list.webp",
       "alt": "Typescript list project interface",
       "showcaseImage": "./img/typescript-list.webp"
-    }
+    },
+  {
+    "id": "7",
+    "title": "KusadasiVipTaxi Website",
+    "type": "WEB DEVELOPMENT",
+    "specs": [
+      "Mobile-first design",
+      "Responsiveness and adaptability",
+      "User-friendly interface",
+      "Cross-browser compatibility",
+      "Accessibility",
+      "React",
+      "Tailwind"
+    ],
+    "description": "Kusadasi VIP Taxi was my first professional project, completed in just one month using React and Tailwind CSS...",
+    "showcaseDescription": "Kusadasi VIP Taxi was my first professional project, completed in just one month using React and Tailwind CSS. Despite tight time and budget constraints, the site features a responsive, user-friendly design that allows users to book rides and access information with ease. A key feature is the ability to switch between languages, making it accessible to a broader audience. This project showcases efficient development under pressure, balancing functionality and speed.",
+    "link": "https://kusadasiviptaxi.com/",
+    "buttonText": "visit live site",
+    "image": "./img/Taxi.webp",
+    "showcaseImage": "./img/Taxi-Showcase.webp"
+  }
   ]
   
