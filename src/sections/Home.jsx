@@ -39,7 +39,7 @@ function Home() {
         <ImportAos />
         <Navbar isFooter={false} />
         <main className="max-container relative flex h-[calc(100vh-10rem)] flex-col justify-center p-4 text-text-white sm:h-[calc(100vh-14rem)] sm:px-8 xl:px-[6rem] landscape:max-xl:h-fit">
-          <div className="absolute -bottom-10 right-0 flex h-24 w-full bg-primary sm:bottom-0 sm:items-center xl:-bottom-20 xl:right-20 xl:h-screen xl:w-24 xl:justify-center">
+          <div className="absolute -bottom-10 right-0 flex h-24 w-full bg-primary sm:bottom-0 sm:items-center xl:-bottom-20 xl:right-20 xl:h-screen 3xl:-bottom-10 xl:w-24 xl:justify-center">
             <div
               data-aos="slide-down"
               data-aos-duration="1500"
