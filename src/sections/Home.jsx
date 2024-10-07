@@ -116,7 +116,7 @@ function Home() {
             >
               {/* CTA Button with the animation logic of moving it on the x and y with transition */}
               <Link smooth to="#work" className="p-2">
-                <button className="h-[3.5rem] w-[9.625rem] -translate-x-4 -translate-y-2 bg-primary font-lato text-sm font-bold text-white transition-all duration-500 hover:-translate-x-[0.6rem] hover:-translate-y-[0.13rem] hover:bg-highlight sm:h-[3.75rem] sm:w-[10.625rem] sm:text-base">
+                <button onClick="va('send', 'event', 'Button', 'onclick', null, null, null);" className="h-[3.5rem] w-[9.625rem] -translate-x-4 -translate-y-2 bg-primary font-lato text-sm font-bold text-white transition-all duration-500 hover:-translate-x-[0.6rem] hover:-translate-y-[0.13rem] hover:bg-highlight sm:h-[3.75rem] sm:w-[10.625rem] sm:text-base">
                   see my work
                 </button>
               </Link>
@@ -130,7 +130,7 @@ function Home() {
                 className="p-2"
                 href="https://drive.google.com/file/d/17aUD53d-_kGrmTcAGbSIzq8bEhIZbXL9/view?usp=sharing"
               >
-                <button className="h-[3.5rem] w-[6.625rem] -translate-x-4 -translate-y-2 bg-primary font-lato text-sm font-bold text-white transition-all duration-500 hover:-translate-x-[0.6rem] hover:-translate-y-[0.13rem] hover:bg-highlight sm:h-[3.75rem] sm:w-[5.625rem] sm:text-base">
+                <button onClick="va('send', 'event', 'Button', 'onclick', null, null, null);" className="h-[3.5rem] w-[6.625rem] -translate-x-4 -translate-y-2 bg-primary font-lato text-sm font-bold text-white transition-all duration-500 hover:-translate-x-[0.6rem] hover:-translate-y-[0.13rem] hover:bg-highlight sm:h-[3.75rem] sm:w-[5.625rem] sm:text-base">
                   cv
                 </button>
               </a>
