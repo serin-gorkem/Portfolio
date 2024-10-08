@@ -38,8 +38,8 @@ function Home() {
         {/* Import AOS for animations */}
         <ImportAos />
         <Navbar isFooter={false} />
-        <main className="max-container relative flex h-[calc(100vh-10rem)] flex-col justify-center p-4 text-text-white sm:h-[calc(100vh-14rem)] sm:px-8 xl:px-[6rem] landscape:max-xl:h-fit">
-          <div className="absolute -bottom-10 right-0 flex h-24 w-full bg-primary sm:bottom-0 sm:items-center xl:-bottom-20 xl:right-20 xl:h-screen xl:w-24 xl:justify-center">
+        <main className="max-container relative flex h-[calc(100vh-10rem)] flex-col justify-center p-4 text-text-white sm:h-[calc(100vh-20rem)] xl:h-[calc(100vh-14rem)] sm:px-8 xl:px-[6rem] landscape:max-xl:h-fit">
+          <div className="absolute -bottom-10 right-0 flex h-24 w-full bg-primary sm:-bottom-28 sm:items-center xl:-bottom-20 3xl:-bottom-12 xl:right-[6.5rem] xl:h-screen xl:w-24 xl:justify-center">
             <div
               data-aos="slide-down"
               data-aos-duration="1500"
@@ -123,15 +123,15 @@ function Home() {
             </div>
             <div
               data-aos="fade-up"
-              className="relative h-[3.5rem] w-[6.625rem] border-2 border-primary hover:border-highlight sm:h-[3.75rem] sm:w-[5.625rem]"
+              className="relative h-[3.5rem] w-[7.625rem] border-2 border-primary hover:border-highlight sm:h-[3.75rem] sm:w-[8.625rem]"
             >
               {/* CTA Button with the animation logic of moving it on the x and y with transition */}
               <a
                 className="p-2"
                 href="https://drive.google.com/file/d/17aUD53d-_kGrmTcAGbSIzq8bEhIZbXL9/view?usp=sharing"
               >
-                <button onClick="va('send', 'event', 'Button', 'onclick', null, null, null);" className="h-[3.5rem] w-[6.625rem] -translate-x-4 -translate-y-2 bg-primary font-lato text-sm font-bold text-white transition-all duration-500 hover:-translate-x-[0.6rem] hover:-translate-y-[0.13rem] hover:bg-highlight sm:h-[3.75rem] sm:w-[5.625rem] sm:text-base">
-                  cv
+                <button onClick="va('send', 'event', 'Button', 'onclick', null, null, null);" className="h-[3.5rem] w-[7.625rem] -translate-x-4 -translate-y-2 bg-primary font-lato text-sm font-bold text-white transition-all duration-500 hover:-translate-x-[0.6rem] hover:-translate-y-[0.13rem] hover:bg-highlight sm:h-[3.75rem] sm:w-[8.625rem] sm:text-base">
+                  download cv
                 </button>
               </a>
             </div>
@@ -150,10 +150,10 @@ function Home() {
       }
       The second div has overflow: hidden to make it look like it disappears.
        */}
-        <div className="max-container pointer-events-none relative bottom-12 z-10 hidden justify-end sm:flex sm:px-8 xl:px-[6rem] 3xl:bottom-24">
+        <div className="max-container pointer-events-none relative bottom-12 sm:bottom-16 z-10 hidden justify-end xl:flex sm:px-8 xl:px-[8rem] 3xl:bottom-24">
           <div data-aos="slide-down" className="relative w-12 overflow-hidden">
-            <div className="h-40 w-0.5 animate-scroll-arrow bg-highlight sm:block"></div>
-            <p className="absolute -right-4 top-[1.3rem] rotate-90 font-lato font-medium text-highlight">
+            <div className="h-44 w-0.5 animate-scroll-arrow bg-highlight sm:block"></div>
+            <p className="absolute -right-5 top-[1.3rem] rotate-90 font-lato font-medium text-highlight">
               SCROLL
             </p>
           </div>

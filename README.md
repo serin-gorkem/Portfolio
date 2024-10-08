@@ -11,7 +11,7 @@ Although design was inspired, I created it on scratch with <a href= "https://www
 It showcases the following:
 - My projects
 - My CV and contact information
-- What I do
+- About me
 
 ## Technologies
  ### Design

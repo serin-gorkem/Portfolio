@@ -5,7 +5,7 @@ const TechStack = lazy(() => import("./sections/TechStack"));
 const Home = lazy(() => import("./sections/Home"));
 const Work = lazy(() => import("./sections/Work"));
 const Footer = lazy(() => import("./components/Footer"));
-const WhatIDo = lazy(() => import("./sections/WhatIDo"));
+const About = lazy(() => import("./sections/About"));
 
 /**
  * @description The Landing component is the main page of the website, showcasing the developer's skills and services.
@@ -29,8 +29,8 @@ const Landing = memo(function Landing() {
     <Suspense fallback={<h1 className="flex justify-center text-text-white items-center h-screen">Loading...</h1>} >
       <Home />
       <Work />
+      <About />
       <TechStack/>
-      <WhatIDo />
       <Footer />
     </Suspense>
   );

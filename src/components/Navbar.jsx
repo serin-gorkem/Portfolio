@@ -12,20 +12,22 @@ function Navbar({ isFooter }) {
   /* Open and close menu with toggle hidden attribute */
   const openMenu = () => {
     const menu = document.querySelector(".menu");
-    menu?.classList.toggle("-translate-y-20");
-    menu?.classList.toggle("opacity-0");
+    menu?.classList.toggle("translate-y-6");
+    menu?.classList.toggle("sm:-translate-y-5");
+    menu?.classList.toggle("opacity-90");
     menu?.classList.toggle("pointer-events-none");
     document.querySelector(".menu-toggle")?.classList.toggle("hidden");
   };
 
   const goBottom = () => {
     window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" });
+    openMenu();
   };
 
   const navLinks = [
     { to: "/#work", label: "my work" },
     { to: "/#tech", label: "tech stack" },
-    { to: "/#whatIDo", label: "what I do" },
+    { to: "/#about", label: "about me" },
   ];
 
   const renderNavLinks = (isFooter) =>
@@ -36,13 +38,10 @@ function Navbar({ isFooter }) {
           <Link
             smooth
             to={link.to}
+            className= {`cursor-pointer ${isFooter ? "text-sm sm:text-2xl 3xl:text-3xl" : "hidden text-xl xl:block 3xl:text-2xl"}`}
             aria-label={`Scroll to the ${link.label} section.`}
           >
-            <div
-              className={`cursor-pointer ${isFooter ? "text-sm sm:text-2xl 3xl:text-3xl" : "hidden text-xl sm:block 3xl:text-2xl"}`}
-            >
               {link.label}
-            </div>
           </Link>
         }
       />
@@ -87,7 +86,7 @@ function Navbar({ isFooter }) {
                     onClick={goBottom}
                     aria-label="Scroll to the footer section at the end of the page."
                   >
-                    <div className="hidden cursor-pointer text-xl sm:block 3xl:text-2xl">
+                    <div className="hidden cursor-pointer text-xl xl:block 3xl:text-2xl">
                       get in touch
                     </div>
                   </button>
@@ -95,7 +94,7 @@ function Navbar({ isFooter }) {
               />
             </div>
             <div
-              className="group relative z-10 flex h-8 cursor-pointer flex-col sm:hidden"
+              className="group relative z-10 flex h-8 cursor-pointer flex-col xl:hidden"
               onClick={openMenu}
             >
               <hr className="h-full w-9 border-t-4 border-highlight" />
@@ -103,24 +102,25 @@ function Navbar({ isFooter }) {
               <hr className="h-full w-9 border-t-4 border-highlight" />
             </div>
           </nav>
-          <div className="menu pointer-events-none absolute z-20 flex h-[8.25rem] w-[calc(100vw-1rem)] -translate-y-20 flex-col justify-center gap-3 bg-primary p-4 font-title font-bold tracking-tight text-text-white opacity-0 transition-all duration-500 sm:hidden">
+          <div className="menu pointer-events-none absolute z-20 flex w-[calc(100vw-1rem)]
+          flex-col justify-center gap-6 bg-primary px-4 py-8 sm:px-8 font-title font-bold tracking-tight text-text-white opacity-0 transition-all duration-500 xl:hidden">
             {navLinks.map((link) => (
               <Link
                 key={link.to}
                 smooth
+                onClick={openMenu}
                 to={link.to}
+                className="hover:text-highlight"
                 aria-label={`Scroll to the ${link.label} section.`}
               >
-                <div className="cursor-pointer hover:text-highlight">
-                  {link.label}
-                </div>
+                {link.label}
               </Link>
             ))}
             <button
               onClick={goBottom}
               aria-label="Scroll to the footer section at the end of the page."
             >
-              <div className="cursor-pointer hover:text-highlight">
+              <div className="cursor-pointer text-left hover:text-highlight">
                 get in touch
               </div>
             </button>

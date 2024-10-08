@@ -2,11 +2,11 @@ import { lazy } from "react";
 import PageDivider from "../components/PageDivider";
 const ImportAos = lazy(() => import("../components/ImportAos"));
 /**
- * @description The WhatIDo component describes the developer's skills and services.
+ * @description The About component describes the developer's skills and services.
  */
-function WhatIDo() {
+function About() {
   return (
-    <article id="whatIDo" className="m-2 py-8 xl:m-4">
+    <article id="about" className="m-2 py-8 xl:m-4">
       {/* Import AOS for animations */}
       <ImportAos />
       <PageDivider title="What" titleHighlight="I do" page="03" />
@@ -39,4 +39,4 @@ function WhatIDo() {
     </article>
   );
 }
-export default WhatIDo;
+export default About;
