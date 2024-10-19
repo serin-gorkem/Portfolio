@@ -1,5 +1,5 @@
 import { lazy, memo, Suspense } from "react";
-import { useLocation } from "react-router-dom";
+import { Navigate, useLocation } from "react-router-dom";
 import { useEffect } from "react";
 const Navbar = lazy(() => import("./components/Navbar"));
 const Footer = lazy(() => import("./components/Footer"));
@@ -13,8 +13,6 @@ const ImportAos = lazy(() => import("./components/ImportAos"));
 const Showcase = memo(function Showcase() {
   const location = useLocation();
   const { project } = location.state;
-
-
   useEffect(() => {
     window.scrollTo(0, 0);
   },[]);
@@ -24,10 +22,11 @@ const Showcase = memo(function Showcase() {
   function goBackTop() {
     window.scrollTo({ top: 0, behavior: "smooth" });
   }
-
+  
   return (
     <Suspense fallback={<h1>Loading...</h1>}>
       <ImportAos/>
+     {project ? (
       <article
         id="showcase"
         className="m-2 h-[calc(100vh-1rem)] bg-secondary text-text-white xl:m-4 xl:h-[calc(100vh-2rem)] landscape:max-xl:h-[150vh]"
@@ -115,6 +114,7 @@ const Showcase = memo(function Showcase() {
         </div>
         <Footer />
       </article>
+     ) : (<Navigate to="/"/>)}
     </Suspense>
   );
 });
