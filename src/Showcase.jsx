@@ -12,7 +12,7 @@ const ImportAos = lazy(() => import("./components/ImportAos"));
 
 const Showcase = memo(function Showcase() {
   const location = useLocation();
-  const { project } = location.state;
+  const { project } = location ?  location.state : null;
   useEffect(() => {
     window.scrollTo(0, 0);
   },[]);
@@ -22,7 +22,6 @@ const Showcase = memo(function Showcase() {
   function goBackTop() {
     window.scrollTo({ top: 0, behavior: "smooth" });
   }
-  
   return (
     <Suspense fallback={<h1>Loading...</h1>}>
       <ImportAos/>
@@ -55,10 +54,10 @@ const Showcase = memo(function Showcase() {
           </p>
           <div
             data-aos="fade-up"
-            className="relative mb-10 mt-8 h-[3.5rem] w-[9.625rem]  border-2 border-primary hover:border-highlight sm:h-[3.75rem] sm:w-[10.625rem]"
+            className="relative h-[3.5rem] w-[9.625rem] my-4 border-2 border-primary hover:border-highlight sm:h-[3.75rem] sm:w-[10.625rem]"
           >
             {/* CTA Button with the animation logic of moving it on the x and y with transition */}
-            <button className="h-[3.5rem] w-[9.625rem] -translate-x-2 -translate-y-2 hover:bg-highlight bg-primary  font-lato text-xs text-white transition-all duration-500 hover:translate-x-0 hover:translate-y-0 sm:h-[3.75rem] sm:w-[10.625rem] sm:text-base">
+            <button className="h-[3.5rem] w-[9.625rem] -translate-x-4 -translate-y-2 bg-primary font-lato text-sm font-bold text-white transition-all duration-500 hover:-translate-x-[0.1rem] hover:-translate-y-[0.13rem] hover:bg-highlight sm:h-[3.75rem] sm:w-[10.625rem] sm:text-base">
               <a href={project.link} aria-label="visit source" className="p-4">
                 {project.buttonText}
               </a>
