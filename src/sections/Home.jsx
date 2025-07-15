@@ -128,7 +128,7 @@ function Home() {
               {/* CTA Button with the animation logic of moving it on the x and y with transition */}
               <a
                 className="p-2"
-                href="https://drive.google.com/file/d/17aUD53d-_kGrmTcAGbSIzq8bEhIZbXL9/view?usp=sharing"
+                href="https://drive.google.com/file/d/1tfcF4BMu8RC04X-JCq1cahgAx8nAEo3m/view?usp=sharing"
               >
                 <button onClick="va('send', 'event', 'Button', 'onclick', null, null, null);" className="h-[3.5rem] w-[7.625rem] -translate-x-4 -translate-y-2 bg-primary font-lato text-sm font-bold text-white transition-all duration-500 hover:-translate-x-[0.6rem] hover:-translate-y-[0.13rem] hover:bg-highlight sm:h-[3.75rem] sm:w-[8.625rem] sm:text-base">
                   download cv
