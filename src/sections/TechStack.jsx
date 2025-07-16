@@ -128,7 +128,7 @@ function TechList({ isFrontend }) {
       alt: "Next.js logo",
     },
     {
-      src: "./svg/typescript-official-svgrepo.svg",
+      src: "./svg/typescript-min.svg",
       text: "Typescript",
       alt: "Typescript logo",
     },
