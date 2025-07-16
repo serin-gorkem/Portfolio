@@ -122,6 +122,16 @@ function TechList({ isFrontend }) {
       text: "Axios",
       alt: "AXIOS logo",
     },
+    {
+      src: "./svg/nextjs-fill-svgrepo-com.svg",
+      text: "Next.js",
+      alt: "Next.js logo",
+    },
+    {
+      src: "./svg/typescript-official-svgrepo.svg",
+      text: "Typescript",
+      alt: "Typescript logo",
+    },
   ];
   return isFrontend
     ? frontend.map(({ src, text, alt }) => (
