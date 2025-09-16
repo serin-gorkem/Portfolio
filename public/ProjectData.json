@@ -163,6 +163,47 @@
     "buttonText": "visit live site",
     "image": "./img/Taxi.webp",
     "showcaseImage": "./img/Taxi-Showcase.webp"
+  },
+  {
+    "id": "8",
+    "title": "AirportToHotels Website",
+    "type": "NEXTJS WEB DEVELOPMENT",
+    "specs": [
+      "Mobile-first design",
+      "Next.js",
+      "Responsiveness and adaptability",
+      "API",
+      "Backend",
+      "User-friendly interface",
+      "Cross-browser compatibility",
+      "Accessibility",
+      "Tailwind"
+    ],
+    "description": "This project is my current passion piece: I built Airport to Hotels using Next.js, and it’s one I’m especially proud of because it pushed me into new territory. I wanted more speed, better structure, and a smoother user experience—so Next.js was the perfect tool to level up my skills.",
+    "showcaseDescription": "This project is my current passion piece: I built Airport to Hotels using Next.js, and it’s one I’m especially proud of because it pushed me into new territory. I wanted more speed, better structure, and a smoother user experience—so Next.js was the perfect tool to level up my skills.From the beginning, I took charge of every step: defining the design, creating layouts, implementing search and booking flows, and setting up dynamic content. I explored how to fetch data, render pages efficiently, and make everything feel fast and seamless for the visitor",
+    "link": "https://oaknextjs-z7hw.vercel.app/",
+    "buttonText": "visit live site",
+    "image": "./img/AirportToHotels.webp",
+    "showcaseImage": "./img/AirportToHotels-Showcase.webp"
+  },
+  {
+    "id": "9",
+    "title": "Pickpoint Travel Website",
+    "type": "WORDPRESS WEB DEVELOPMENT",
+    "specs": [
+      "Mobile-first design",
+      "Responsiveness and adaptability",
+      "User-friendly interface",
+      "Cross-browser compatibility",
+      "Accessibility",
+      "Wordpress"
+    ],
+    "description": "PickPoint Travel was a milestone project for me because it was the first time I worked with WordPress. I rebuilt the entire website from scratch, which gave me the chance to dive deep into the platform and understand how to structure,",
+    "showcaseDescription": "PickPoint Travel was a milestone project for me because it was the first time I worked with WordPress. I rebuilt the entire website from scratch, which gave me the chance to dive deep into the platform and understand how to structure, design, and customize a site from the ground up. Throughout the process I experimented with different themes and plugins, refined the layout to make it more intuitive, and made sure the design was fully responsive so it would look and work great on any device. This project not only resulted in a clean and modern travel website that captures the spirit of PickPoint Travel, but also marked an important step in my own journey as a web designer, giving me hands-on experience and the confidence to take on more complex projects in the future.",
+    "link": "https://pickpointtravel.com/",
+    "buttonText": "visit live site",
+    "image": "./img/Pickpoint.webp",
+    "showcaseImage": "./img/Pickpoint-Showcase.webp"
   }
   ]
   

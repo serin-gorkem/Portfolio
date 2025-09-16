@@ -10,8 +10,12 @@ const PropTypes = lazy(() => import("prop-types"));
  */
 function Navbar({ isFooter }) {
   /* Open and close menu with toggle hidden attribute */
-  const openMenu = () => {
+  const toggleMenu = () => {
     const menu = document.querySelector(".menu");
+    const hamburger = document.querySelector(".hamburger");
+    const close = document.querySelector(".close");
+    hamburger?.classList.toggle("hidden");
+    close?.classList.toggle("hidden");
     menu?.classList.toggle("translate-y-6");
     menu?.classList.toggle("sm:-translate-y-5");
     menu?.classList.toggle("opacity-90");
@@ -21,7 +25,7 @@ function Navbar({ isFooter }) {
 
   const goBottom = () => {
     window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" });
-    openMenu();
+    toggleMenu();
   };
 
   const navLinks = [
@@ -93,14 +97,23 @@ function Navbar({ isFooter }) {
                 }
               />
             </div>
-            <div
-              className="group relative z-10 flex h-8 cursor-pointer flex-col xl:hidden"
+
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-10 text-highlight cursor-pointer hamburger" onClick={toggleMenu}>
+  <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+</svg>
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-10 text-highlight cursor-pointer hidden close" onClick={toggleMenu}>
+  <path strokeLinecap="round" strokeLinejoin="round" d="M6 18 18 6M6 6l12 12" />
+</svg>
+
+
+            {/* <div
+              className="group hamburger relative z-10 flex h-8 cursor-pointer flex-col xl:hidden"
               onClick={openMenu}
             >
               <hr className="h-full w-9 border-t-4 border-highlight" />
               <hr className="h-full w-9 border-t-4 border-highlight" />
               <hr className="h-full w-9 border-t-4 border-highlight" />
-            </div>
+            </div> */}
           </nav>
           <div className="menu pointer-events-none absolute z-20 flex w-[calc(100vw-1rem)]
           flex-col justify-center gap-6 bg-primary px-4 py-8 sm:px-8 font-title font-bold tracking-tight text-text-white opacity-0 transition-all duration-500 xl:hidden">
@@ -108,7 +121,7 @@ function Navbar({ isFooter }) {
               <Link
                 key={link.to}
                 smooth
-                onClick={openMenu}
+                onClick={toggleMenu}
                 to={link.to}
                 className="hover:text-highlight"
                 aria-label={`Scroll to the ${link.label} section.`}
