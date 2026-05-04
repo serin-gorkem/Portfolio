@@ -1,9 +1,9 @@
 [
   {
-    id: "0",
-    title: "AirportToHotels Website",
-    type: "NEXTJS WEB DEVELOPMENT",
-    specs: [
+    "id": "0",
+    "title": "AirportToHotels Website",
+    "type": "NEXTJS WEB DEVELOPMENT",
+    "specs": [
       "Mobile-first design",
       "Next.js",
       "Responsiveness and adaptability",
@@ -14,21 +14,19 @@
       "Accessibility",
       "Tailwind"
     ],
-    description:
-      "AirportToHotels is a fullstack transfer booking platform built with Next.js, focused on speed, structure, SEO, and a smooth booking experience.",
-    showcaseDescription:
-      "AirportToHotels is a fullstack transfer booking platform built with Next.js. The project includes a modern multi-step booking flow, dynamic route-based pricing, responsive UI, and a scalable structure for future business needs. From design and layout planning to frontend development, backend logic, API usage, and booking flow implementation, this project represents one of my strongest and most complete works.",
-    link: "https://www.airporttohotels.com/",
-    buttonText: "visit live site",
-    image: "./img/AirportToHotels.webp",
-    alt: "AirportToHotels transfer booking website.",
-    showcaseImage: "./img/AirportToHotels-Showcase.webp"
+    "description": "AirportToHotels is a fullstack transfer booking platform built with Next.js, focused on speed, structure, SEO, and a smooth booking experience.",
+    "showcaseDescription": "AirportToHotels is a fullstack transfer booking platform built with Next.js. The project includes a modern multi-step booking flow, dynamic route-based pricing, responsive UI, and a scalable structure for future business needs. From design and layout planning to frontend development, backend logic, API usage, and booking flow implementation, this project represents one of my strongest and most complete works.",
+    "link": "https://www.airporttohotels.com/",
+    "buttonText": "visit live site",
+    "image": "./img/AirportToHotels.webp",
+    "alt": "AirportToHotels transfer booking website.",
+    "showcaseImage": "./img/AirportToHotels-Showcase.webp"
   },
   {
-    id: "1",
-    title: "Roma Cafe AVM Website",
-    type: "NEXTJS WEB DEVELOPMENT",
-    specs: [
+    "id": "1",
+    "title": "Roma Cafe AVM Website",
+    "type": "NEXTJS WEB DEVELOPMENT",
+    "specs": [
       "Mobile-first design",
       "Next.js",
       "Responsiveness and adaptability",
@@ -39,21 +37,19 @@
       "Accessibility",
       "Tailwind"
     ],
-    description:
-      "Roma Cafe AVM is a modern QR menu website built with Next.js and Tailwind CSS, designed for a fast, responsive, and elegant restaurant browsing experience.",
-    showcaseDescription:
-      "Roma Cafe AVM is a modern QR menu website developed with Next.js and Tailwind CSS. The project focuses on a clean restaurant menu experience with mobile-first layouts, dynamic category pages, optimized product visuals, and a smooth browsing flow. The design combines elegant visual presentation with practical usability, making it easy for customers to explore food and drink categories from any device.",
-    link: "https://cafe-roma.com.tr/",
-    buttonText: "visit live site",
-    image: "./img/Roma-Cafe-AVM.webp",
-    alt: "Roma Cafe AVM QR menu website.",
-    showcaseImage: "./img/Roma-Cafe-AVM-Showcase.webp"
+    "description": "Roma Cafe AVM is a modern QR menu website built with Next.js and Tailwind CSS, designed for a fast, responsive, and elegant restaurant browsing experience.",
+    "showcaseDescription": "Roma Cafe AVM is a modern QR menu website developed with Next.js and Tailwind CSS. The project focuses on a clean restaurant menu experience with mobile-first layouts, dynamic category pages, optimized product visuals, and a smooth browsing flow. The design combines elegant visual presentation with practical usability, making it easy for customers to explore food and drink categories from any device.",
+    "link": "https://cafe-roma.com.tr/",
+    "buttonText": "visit live site",
+    "image": "./img/Roma-Cafe-AVM.webp",
+    "alt": "Roma Cafe AVM QR menu website.",
+    "showcaseImage": "./img/Roma-Cafe-AVM-Showcase.webp"
   },
   {
-    id: "2",
-    title: "Roma Cafe Sahil Website",
-    type: "NEXTJS WEB DEVELOPMENT",
-    specs: [
+    "id": "2",
+    "title": "Roma Cafe Sahil Website",
+    "type": "NEXTJS WEB DEVELOPMENT",
+    "specs": [
       "Mobile-first design",
       "Next.js",
       "Responsiveness and adaptability",
@@ -64,21 +60,19 @@
       "Accessibility",
       "Tailwind"
     ],
-    description:
-      "Roma Cafe Sahil is a responsive QR menu website designed for a restaurant/cafe experience, with structured categories, visual menu sections, and mobile-focused navigation.",
-    showcaseDescription:
-      "Roma Cafe Sahil is a responsive QR menu website created to provide customers with a clean and accessible digital menu experience. Built with Next.js and Tailwind CSS, the project includes organized menu categories, dynamic inner pages, mobile-first layouts, and carefully prepared food and drink visuals. The goal was to create a practical, elegant, and easy-to-use menu system suitable for real restaurant use.",
-    link: "https://cafe-roma-sahil.com.tr/",
-    buttonText: "visit live site",
-    image: "./img/Roma-Cafe-Sahil.webp",
-    alt: "Roma Cafe Sahil QR menu website.",
-    showcaseImage: "./img/Roma-Cafe-Sahil-Showcase.webp"
+    "description": "Roma Cafe Sahil is a responsive QR menu website designed for a restaurant/cafe experience, with structured categories, visual menu sections, and mobile-focused navigation.",
+    "showcaseDescription": "Roma Cafe Sahil is a responsive QR menu website created to provide customers with a clean and accessible digital menu experience. Built with Next.js and Tailwind CSS, the project includes organized menu categories, dynamic inner pages, mobile-first layouts, and carefully prepared food and drink visuals. The goal was to create a practical, elegant, and easy-to-use menu system suitable for real restaurant use.",
+    "link": "https://cafe-roma-sahil.com.tr/",
+    "buttonText": "visit live site",
+    "image": "./img/Roma-Cafe-Sahil.webp",
+    "alt": "Roma Cafe Sahil QR menu website.",
+    "showcaseImage": "./img/Roma-Cafe-Sahil-Showcase.webp"
   },
   {
-    id: "3",
-    title: "Pickpoint Travel Website",
-    type: "WORDPRESS WEB DEVELOPMENT",
-    specs: [
+    "id": "3",
+    "title": "Pickpoint Travel Website",
+    "type": "WORDPRESS WEB DEVELOPMENT",
+    "specs": [
       "Mobile-first design",
       "Responsiveness and adaptability",
       "User-friendly interface",
@@ -86,21 +80,19 @@
       "Accessibility",
       "Wordpress"
     ],
-    description:
-      "PickPoint Travel was a milestone project for me because it was the first time I worked with WordPress. I rebuilt the entire website from scratch...",
-    showcaseDescription:
-      "PickPoint Travel was a milestone project for me because it was the first time I worked with WordPress. I rebuilt the entire website from scratch, which gave me the chance to dive deep into the platform and understand how to structure, design, and customize a site from the ground up. Throughout the process I experimented with different themes and plugins, refined the layout to make it more intuitive, and made sure the design was fully responsive so it would look and work great on any device.",
-    link: "https://pickpointtravel.com/",
-    buttonText: "visit live site",
-    image: "./img/Pickpoint.webp",
-    alt: "Pickpoint Travel website.",
-    showcaseImage: "./img/Pickpoint-Showcase.webp"
+    "description": "PickPoint Travel was a milestone project for me because it was the first time I worked with WordPress. I rebuilt the entire website from scratch...",
+    "showcaseDescription": "PickPoint Travel was a milestone project for me because it was the first time I worked with WordPress. I rebuilt the entire website from scratch, which gave me the chance to dive deep into the platform and understand how to structure, design, and customize a site from the ground up. Throughout the process I experimented with different themes and plugins, refined the layout to make it more intuitive, and made sure the design was fully responsive so it would look and work great on any device.",
+    "link": "https://pickpointtravel.com/",
+    "buttonText": "visit live site",
+    "image": "./img/Pickpoint.webp",
+    "alt": "Pickpoint Travel website.",
+    "showcaseImage": "./img/Pickpoint-Showcase.webp"
   },
   {
-    id: "4",
-    title: "KusadasiVipTaxi Website",
-    type: "WEB DEVELOPMENT",
-    specs: [
+    "id": "4",
+    "title": "KusadasiVipTaxi Website",
+    "type": "WEB DEVELOPMENT",
+    "specs": [
       "Mobile-first design",
       "Responsiveness and adaptability",
       "User-friendly interface",
@@ -109,41 +101,37 @@
       "React",
       "Tailwind"
     ],
-    description:
-      "Kusadasi VIP Taxi was my first professional project, completed in just one month using React and Tailwind CSS...",
-    showcaseDescription:
-      "Kusadasi VIP Taxi was my first professional project, completed in just one month using React and Tailwind CSS. Despite tight time and budget constraints, the site features a responsive, user-friendly design that allows users to book rides and access information with ease. A key feature is the ability to switch between languages, making it accessible to a broader audience.",
-    link: "https://kusadasiviptaxi.com/",
-    buttonText: "visit live site",
-    image: "./img/Taxi.webp",
-    alt: "Kusadasi VIP Taxi website.",
-    showcaseImage: "./img/Taxi-Showcase.webp"
+    "description": "Kusadasi VIP Taxi was my first professional project, completed in just one month using React and Tailwind CSS...",
+    "showcaseDescription": "Kusadasi VIP Taxi was my first professional project, completed in just one month using React and Tailwind CSS. Despite tight time and budget constraints, the site features a responsive, user-friendly design that allows users to book rides and access information with ease. A key feature is the ability to switch between languages, making it accessible to a broader audience.",
+    "link": "https://kusadasiviptaxi.com/",
+    "buttonText": "visit live site",
+    "image": "./img/Taxi.webp",
+    "alt": "Kusadasi VIP Taxi website.",
+    "showcaseImage": "./img/Taxi-Showcase.webp"
   },
   {
-    id: "5",
-    title: "Typescript List Tech Project",
-    type: "WEB DEVELOPMENT",
-    specs: [
+    "id": "5",
+    "title": "Typescript List Tech Project",
+    "type": "WEB DEVELOPMENT",
+    "specs": [
       "Typescript",
       "Tech",
       "Responsiveness and adaptability",
       "Clean code practices"
     ],
-    description:
-      "Typescript List is a web app built using TypeScript, demonstrating efficient data handling and strong typing.",
-    showcaseDescription:
-      "Typescript List showcases the power of TypeScript for building scalable web applications. It emphasizes clean code, strict type checking, and an intuitive interface, offering users the ability to filter and manage lists with ease.",
-    link: "https://serin-gorkem.github.io/typescript-list/",
-    buttonText: "visit live site",
-    image: "./img/typescript-list.webp",
-    alt: "Typescript list project interface.",
-    showcaseImage: "./img/typescript-list.webp"
+    "description": "Typescript List is a web app built using TypeScript, demonstrating efficient data handling and strong typing.",
+    "showcaseDescription": "Typescript List showcases the power of TypeScript for building scalable web applications. It emphasizes clean code, strict type checking, and an intuitive interface, offering users the ability to filter and manage lists with ease.",
+    "link": "https://serin-gorkem.github.io/typescript-list/",
+    "buttonText": "visit live site",
+    "image": "./img/typescript-list.webp",
+    "alt": "Typescript list project interface.",
+    "showcaseImage": "./img/typescript-list.webp"
   },
   {
-    id: "6",
-    title: "RRated Website",
-    type: "WEB DEVELOPMENT",
-    specs: [
+    "id": "6",
+    "title": "RRated Website",
+    "type": "WEB DEVELOPMENT",
+    "specs": [
       "Mobile-first design",
       "Responsiveness and adaptability",
       "User-friendly interface",
@@ -153,21 +141,19 @@
       "Search logic",
       "SASS"
     ],
-    description:
-      "RRated is a responsive movie database website developed using the Movie Database API...",
-    showcaseDescription:
-      "RRated is a responsive movie database website developed using the Movie Database API. This project features a modern, user-friendly interface with dynamic content fetched from the API. Built with SASS for organized and efficient styling, it enables users to search for movies, view details, and explore trending films.",
-    link: "https://rrated.netlify.app/",
-    buttonText: "visit live site",
-    image: "./img/RRated.webp",
-    alt: "RRated movie rating website.",
-    showcaseImage: "./img/RRated-Showcase.webp"
+    "description": "RRated is a responsive movie database website developed using the Movie Database API...",
+    "showcaseDescription": "RRated is a responsive movie database website developed using the Movie Database API. This project features a modern, user-friendly interface with dynamic content fetched from the API. Built with SASS for organized and efficient styling, it enables users to search for movies, view details, and explore trending films.",
+    "link": "https://rrated.netlify.app/",
+    "buttonText": "visit live site",
+    "image": "./img/RRated.webp",
+    "alt": "RRated movie rating website.",
+    "showcaseImage": "./img/RRated-Showcase.webp"
   },
   {
-    id: "7",
-    title: "Nike Clone Website",
-    type: "WEB DEVELOPMENT",
-    specs: [
+    "id": "7",
+    "title": "Nike Clone Website",
+    "type": "WEB DEVELOPMENT",
+    "specs": [
       "Mobile-first design",
       "Responsiveness and adaptability",
       "User-friendly interface",
@@ -176,21 +162,19 @@
       "React",
       "Tailwind"
     ],
-    description:
-      "The React Nike App is a responsive e-commerce website developed through a React and Tailwind CSS tutorial...",
-    showcaseDescription:
-      "The React Nike App is a responsive e-commerce website developed through a React and Tailwind CSS tutorial. The app features a clean and dynamic interface that showcases products in a grid format. Built with React for efficient rendering and Tailwind CSS for rapid styling.",
-    link: "https://react-nike-app-cr.netlify.app/",
-    buttonText: "visit live site",
-    image: "./img/Nike.webp",
-    alt: "Nike clone website.",
-    showcaseImage: "./img/Nike-Showcase.webp"
+    "description": "The React Nike App is a responsive e-commerce website developed through a React and Tailwind CSS tutorial...",
+    "showcaseDescription": "The React Nike App is a responsive e-commerce website developed through a React and Tailwind CSS tutorial. The app features a clean and dynamic interface that showcases products in a grid format. Built with React for efficient rendering and Tailwind CSS for rapid styling.",
+    "link": "https://react-nike-app-cr.netlify.app/",
+    "buttonText": "visit live site",
+    "image": "./img/Nike.webp",
+    "alt": "Nike clone website.",
+    "showcaseImage": "./img/Nike-Showcase.webp"
   },
   {
-    id: "8",
-    title: "Acme Website",
-    type: "WEB DEVELOPMENT",
-    specs: [
+    "id": "8",
+    "title": "Acme Website",
+    "type": "WEB DEVELOPMENT",
+    "specs": [
       "Mobile-first design",
       "Responsiveness and adaptability",
       "User-friendly interface",
@@ -198,21 +182,19 @@
       "Accessibility",
       "Tailwind"
     ],
-    description:
-      "Acme Rocket is a sleek, responsive website developed as part of a Tailwind CSS tutorial...",
-    showcaseDescription:
-      "Acme Rocket is a sleek, responsive website developed as part of a Tailwind CSS tutorial. Built using Tailwind's utility-first approach, the site offers a minimalist and modern layout with optimized styling and fast load times.",
-    link: "https://acme-rocket-tailwind-2pn7.onrender.com/",
-    buttonText: "visit live site",
-    image: "./img/Acme.webp",
-    alt: "A fun acme website.",
-    showcaseImage: "./img/Acme-Showcase.webp"
+    "description": "Acme Rocket is a sleek, responsive website developed as part of a Tailwind CSS tutorial...",
+    "showcaseDescription": "Acme Rocket is a sleek, responsive website developed as part of a Tailwind CSS tutorial. Built using Tailwind's utility-first approach, the site offers a minimalist and modern layout with optimized styling and fast load times.",
+    "link": "https://acme-rocket-tailwind-2pn7.onrender.com/",
+    "buttonText": "visit live site",
+    "image": "./img/Acme.webp",
+    "alt": "A fun acme website.",
+    "showcaseImage": "./img/Acme-Showcase.webp"
   },
   {
-    id: "9",
-    title: "Weather Pulse Website",
-    type: "WEB DEVELOPMENT",
-    specs: [
+    "id": "9",
+    "title": "Weather Pulse Website",
+    "type": "WEB DEVELOPMENT",
+    "specs": [
       "Mobile-first design",
       "Responsiveness and adaptability",
       "User-friendly interface",
@@ -224,21 +206,19 @@
       "Node.js",
       "Express.js"
     ],
-    description:
-      "WeatherPulse is a dynamic, responsive weather forecasting app designed using Figma and built with EJS, Node.js, OpenWeather API, Express, Axios, and Tailwind CSS...",
-    showcaseDescription:
-      "WeatherPulse is a dynamic, responsive weather forecasting app designed using Figma and built with EJS, Node.js, OpenWeather API, Express, Axios, and Tailwind CSS. The clean, modern design provides real-time weather updates with a simple, intuitive interface.",
-    link: "https://weatherpulse.onrender.com/",
-    buttonText: "visit live site",
-    image: "./img/WeatherPulse.webp",
-    alt: "Weather website called Weather Pulse.",
-    showcaseImage: "./img/WeatherPulse-Showcase.webp"
+    "description": "WeatherPulse is a dynamic, responsive weather forecasting app designed using Figma and built with EJS, Node.js, OpenWeather API, Express, Axios, and Tailwind CSS...",
+    "showcaseDescription": "WeatherPulse is a dynamic, responsive weather forecasting app designed using Figma and built with EJS, Node.js, OpenWeather API, Express, Axios, and Tailwind CSS. The clean, modern design provides real-time weather updates with a simple, intuitive interface.",
+    "link": "https://weatherpulse.onrender.com/",
+    "buttonText": "visit live site",
+    "image": "./img/WeatherPulse.webp",
+    "alt": "Weather website called Weather Pulse.",
+    "showcaseImage": "./img/WeatherPulse-Showcase.webp"
   },
   {
-    id: "10",
-    title: "Chat Clone Website Design",
-    type: "WEB DESIGN WORK",
-    specs: [
+    "id": "10",
+    "title": "Chat Clone Website Design",
+    "type": "WEB DESIGN WORK",
+    "specs": [
       "Mobile-first design",
       "Responsiveness and adaptability",
       "User-friendly interface",
@@ -246,21 +226,19 @@
       "Accessibility",
       "Figma"
     ],
-    description:
-      "This is a homepage design and build for a concept project - a chat application.",
-    showcaseDescription:
-      "This is a homepage design and build for a concept project - a chat application. I designed the page and plan to build it on Webflow in the future.",
-    link: "https://www.figma.com/design/NeWDS6LTqcEWSByApMAOBP/Practice%3A-Chat-App-Homepage-Design-(Copy)?node-id=107-2&t=l9sJWatKgJ3lOTdr-1",
-    buttonText: "visit figma file",
-    image: "./img/Chat.webp",
-    alt: "Chat website app design.",
-    showcaseImage: "./img/Chat-Showcase.webp"
+    "description": "This is a homepage design and build for a concept project - a chat application.",
+    "showcaseDescription": "This is a homepage design and build for a concept project - a chat application. I designed the page and plan to build it on Webflow in the future.",
+    "link": "https://www.figma.com/design/NeWDS6LTqcEWSByApMAOBP/Practice%3A-Chat-App-Homepage-Design-(Copy)?node-id=107-2&t=l9sJWatKgJ3lOTdr-1",
+    "buttonText": "visit figma file",
+    "image": "./img/Chat.webp",
+    "alt": "Chat website app design.",
+    "showcaseImage": "./img/Chat-Showcase.webp"
   },
   {
-    id: "11",
-    title: "Elysium Hotel Website Design",
-    type: "WEB DESIGN WORK",
-    specs: [
+    "id": "11",
+    "title": "Elysium Hotel Website Design",
+    "type": "WEB DESIGN WORK",
+    "specs": [
       "Mobile-first design",
       "Responsiveness and adaptability",
       "User-friendly interface",
@@ -268,14 +246,12 @@
       "Accessibility",
       "Figma"
     ],
-    description:
-      "The Elysium Hotel website design focuses on elegance and user experience...",
-    showcaseDescription:
-      "The Elysium Hotel website design focuses on elegance and user experience. It features a modern layout with visually captivating imagery, intuitive navigation, and a seamless booking system. The website showcases the luxurious amenities of the hotel, including spacious rooms with stunning views, an outdoor infinity pool, and fine dining experiences.",
-    link: "https://www.figma.com/design/qpD0Urqf1aFgNX2kbWXtE6/Elysium-Hotel?node-id=0-1&t=fup4HToJp8RAZABu-1",
-    buttonText: "visit figma file",
-    image: "./img/Hotel.webp",
-    alt: "Hotel website design on figma.",
-    showcaseImage: "./img/Hotel-Showcase.webp"
+    "description": "The Elysium Hotel website design focuses on elegance and user experience...",
+    "showcaseDescription": "The Elysium Hotel website design focuses on elegance and user experience. It features a modern layout with visually captivating imagery, intuitive navigation, and a seamless booking system. The website showcases the luxurious amenities of the hotel, including spacious rooms with stunning views, an outdoor infinity pool, and fine dining experiences.",
+    "link": "https://www.figma.com/design/qpD0Urqf1aFgNX2kbWXtE6/Elysium-Hotel?node-id=0-1&t=fup4HToJp8RAZABu-1",
+    "buttonText": "visit figma file",
+    "image": "./img/Hotel.webp",
+    "alt": "Hotel website design on figma.",
+    "showcaseImage": "./img/Hotel-Showcase.webp"
   }
 ]
